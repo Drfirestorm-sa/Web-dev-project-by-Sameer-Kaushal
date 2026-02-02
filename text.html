@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>University Portfolio Wireframe — Sameer Kaushal</title>
+
+  <style>
+    /* ===== Wireframe Styles (based on your example layout) ===== */
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+    body{background:#f5f5f5;color:#333;line-height:1.6}
+    .wireframe-container{
+      max-width:1200px;margin:20px auto;padding:20px;background:#fff;
+      box-shadow:0 0 10px rgba(0,0,0,.1)
+    }
+    .wireframe-section{
+      border:2px solid #ccc;padding:20px;margin-bottom:20px;position:relative
+    }
+    .wireframe-label{
+      position:absolute;top:-10px;left:20px;background:#fff;padding:0 10px;
+      font-weight:bold;color:#666
+    }
+
+    /* Header */
+    .wireframe-header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding-bottom:10px;border-bottom:1px solid #eee;gap:16px;flex-wrap:wrap
+    }
+    .wireframe-logo{
+      width:220px;height:50px;background:#ddd;display:flex;align-items:center;justify-content:center;
+      font-weight:bold;letter-spacing:1px
+    }
+    .wireframe-nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+    .wireframe-nav-item{padding:6px 10px;background:#eee;border:1px solid #e2e2e2}
+
+    /* Hero */
+    .wireframe-hero{
+      height:360px;display:flex;align-items:center;justify-content:center;flex-direction:column;
+      text-align:center;background:#f0f0f0;padding:20px
+    }
+    .wireframe-button{
+      display:inline-block;padding:10px 20px;background:#ddd;margin-top:14px;border:1px solid #d0d0d0
+    }
+
+    /* Layout helpers */
+    .row{display:flex;gap:20px;flex-wrap:wrap}
+    .col{flex:1;min-width:260px}
+    .card{
+      background:#f9f9f9;border:1px solid #e5e5e5;padding:18px
+    }
+    .placeholder{
+      background:#ddd;border:1px solid #cfcfcf;min-height:160px
+    }
+
+    /* Skills */
+    .skills{display:flex;gap:20px;flex-wrap:wrap}
+    .skill{
+      flex:1;min-width:240px;background:#f9f9f9;padding:18px;border:1px solid #e5e5e5
+    }
+    .skill-icon{width:56px;height:56px;background:#ddd;border-radius:50%;margin-bottom:12px}
+
+    /* Timeline */
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .timeline-item{
+      background:#f9f9f9;border:1px solid #e5e5e5;padding:16px;display:flex;gap:14px;align-items:flex-start
+    }
+    .time-dot{width:14px;height:14px;background:#ddd;border-radius:50%;margin-top:6px}
+    .timeline-body{flex:1}
+
+    /* Stacked project panels */
+    .stacked-panels{display:flex;flex-direction:column;gap:14px}
+    .panel{
+      background:#f9f9f9;border:1px solid #e5e5e5;padding:18px;
+      display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap
+    }
+    .panel-left{flex:1;min-width:260px}
+    .panel-right{
+      width:340px;min-height:120px;background:#f0f0f0;border:1px dashed #ccc;padding:14px
+    }
+    .tagrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .tag{padding:4px 8px;background:#eee;border:1px solid #e2e2e2;font-size:12px}
+
+    /* Evidence gallery */
+    .gallery{display:flex;gap:14px;flex-wrap:wrap}
+    .shot{
+      width:calc(33.333% - 10px);min-width:220px;height:150px;background:#ddd;border:1px solid #cfcfcf
+    }
+
+    /* Footer */
+    .wireframe-footer{
+      display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+      padding-top:20px;border-top:1px solid #eee
+    }
+    .wireframe-footer-section{flex:1;min-width:240px}
+    .wireframe-social{display:flex;gap:10px;margin-top:15px}
+    .wireframe-social-icon{width:30px;height:30px;background:#ddd;border-radius:50%}
+    .wireframe-copyright{
+      text-align:center;margin-top:20px;padding-top:20px;border-top:1px solid #eee
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wireframe-container">
+    <h1 style="text-align:center;margin-bottom:30px;">University Showcase Portfolio — Wireframe</h1>
+
+    <!-- HEADER -->
+    <div class="wireframe-section" id="top">
+      <div class="wireframe-label">HEADER / NAV</div>
+      <div class="wireframe-header">
+        <div class="wireframe-logo">YOUR NAME / LOGO</div>
+        <div class="wireframe-nav">
+          <div class="wireframe-nav-item">Home</div>
+          <div class="wireframe-nav-item">About</div>
+          <div class="wireframe-nav-item">Skills</div>
+          <div class="wireframe-nav-item">Timeline</div>
+          <div class="wireframe-nav-item">Projects</div>
+          <div class="wireframe-nav-item">Evidence</div>
+          <div class="wireframe-nav-item">Reflection</div>
+          <div class="wireframe-nav-item">Contact</div>
+        </div>
+      </div>
+      <p style="margin-top:10px;color:#666;">
+        Uni portfolio navigation: quick access to “what I did”, evidence, and evaluation.
+      </p>
+    </div>
+
+    <!-- HERO -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">HERO (INTRO)</div>
+      <div class="wireframe-hero">
+        <h2>Hi, I’m [Your Name] — Computing Student</h2>
+        <p style="max-width:760px;color:#666;margin-top:10px;">
+          Short summary of your focus (AI / data / cybersecurity / product design) and what this site demonstrates.
+        </p>
+        <div class="wireframe-button">View Projects</div>
+        <div class="wireframe-button">Download CV</div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">ABOUT ME</div>
+      <div class="row">
+        <div class="col card">
+          <h3>Profile</h3>
+          <p style="color:#666;margin-top:10px;">
+            4–6 lines about you: course, interests, what you’re building, and what you want employers/lecturers to see.
+          </p>
+          <p style="color:#666;margin-top:10px;">
+            Include: university, year, key modules, and your design/innovation approach.
+          </p>
+        </div>
+        <div class="col placeholder" title="Profile photo / brand image placeholder"></div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">SKILLS / TOOLS</div>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <h3>Programming</h3>
+          <p style="color:#666;">Python • Java • JavaScript • C/C++ (edit to match your real stack)</p>
+        </div>
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <h3>AI / Data</h3>
+          <p style="color:#666;">ML concepts • NLP • data analysis • model evaluation</p>
+        </div>
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <h3>Product & UX</h3>
+          <p style="color:#666;">Wireframing • UI design • system planning • documentation</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE (PAST EXPERIENCE / ACHIEVEMENTS) -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">TIMELINE (PAST WORK)</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time-dot"></div>
+          <div class="timeline-body">
+            <strong>[Year] — Key milestone</strong>
+            <p style="color:#666;margin-top:6px;">Short description of what you did + impact + what you learned.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time-dot"></div>
+          <div class="timeline-body">
+            <strong>[Year] — Project / achievement</strong>
+            <p style="color:#666;margin-top:6px;">Add competitions, leadership, certificates, enterprise challenges, etc.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time-dot"></div>
+          <div class="timeline-body">
+            <strong>[Year] — University / major progress</strong>
+            <p style="color:#666;margin-top:6px;">Add modules, teamwork, placements, or key learning outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS (STACKED APPLE-STYLE) -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">PROJECTS (STACKED SHOWCASE)</div>
+
+      <div class="stacked-panels">
+        <!-- Project 1 -->
+        <div class="panel">
+          <div class="panel-left">
+            <h3>Fravara — AI-Powered Platform (Founder & Lead Developer)</h3>
+            <p style="color:#666;margin-top:8px;">
+              Summary: what it is, who it’s for, and your role. Mention architecture / UX / roadmap ownership.
+            </p>
+            <div class="tagrow">
+              <span class="tag">AI</span><span class="tag">Wearables</span><span class="tag">UX</span><span class="tag">System Design</span>
+            </div>
+            <div class="wireframe-button">View Project Page →</div>
+          </div>
+          <div class="panel-right">
+            <strong>Evidence / Media placeholder</strong>
+            <p style="color:#666;margin-top:8px;">Screenshots, diagrams, GitHub link, pitch deck, etc.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="panel">
+          <div class="panel-left">
+            <h3>GameBoost Garage — Gaming Performance Optimisation (Concept)</h3>
+            <p style="color:#666;margin-top:8px;">
+              Summary: the problem, your solution flow, and what features you designed (scan → diagnose → safe presets).
+            </p>
+            <div class="tagrow">
+              <span class="tag">Performance</span><span class="tag">Diagnostics</span><span class="tag">UX Flow</span>
+            </div>
+            <div class="wireframe-button">View Project Page →</div>
+          </div>
+          <div class="panel-right">
+            <strong>Evidence / Media placeholder</strong>
+            <p style="color:#666;margin-top:8px;">Wireframes, notes, feature list, user journey.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 (placeholder) -->
+        <div class="panel">
+          <div class="panel-left">
+            <h3>[University Project] — Title</h3>
+            <p style="color:#666;margin-top:8px;">
+              Summary: what you built, requirements, tools, what you contributed.
+            </p>
+            <div class="tagrow">
+              <span class="tag">Tag</span><span class="tag">Tag</span><span class="tag">Tag</span>
+            </div>
+            <div class="wireframe-button">View Project Page →</div>
+          </div>
+          <div class="panel-right">
+            <strong>Evidence placeholder</strong>
+            <p style="color:#666;margin-top:8px;">Screens, code snippets, results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVIDENCE / SCREENSHOTS -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">EVIDENCE (SCREENSHOTS / DOCUMENTATION)</div>
+      <div class="gallery">
+        <div class="shot"></div>
+        <div class="shot"></div>
+        <div class="shot"></div>
+        <div class="shot"></div>
+        <div class="shot"></div>
+        <div class="shot"></div>
+      </div>
+      <p style="color:#666;margin-top:12px;">
+        For uni: include proof (screenshots, diagrams, testing outputs, reflection notes, links).
+      </p>
+    </div>
+
+    <!-- REFLECTION / EVALUATION (UNI MARKS SECTION) -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">REFLECTION / EVALUATION</div>
+      <div class="row">
+        <div class="col card">
+          <h3>What went well</h3>
+          <p style="color:#666;margin-top:10px;">Bullet-style reflection on strengths: planning, UI, testing, learning.</p>
+        </div>
+        <div class="col card">
+          <h3>What I’d improve</h3>
+          <p style="color:#666;margin-top:10px;">Performance, documentation, accessibility, better testing, etc.</p>
+        </div>
+        <div class="col card">
+          <h3>Next steps</h3>
+          <p style="color:#666;margin-top:10px;">Roadmap: add features, deploy, user feedback, security hardening.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">CONTACT</div>
+      <div class="row">
+        <div class="col card">
+          <h3>Contact details</h3>
+          <p style="color:#666;margin-top:10px;">Email, LinkedIn, GitHub (placeholders)</p>
+          <div class="wireframe-button">Email Me</div>
+          <div class="wireframe-button">LinkedIn</div>
+          <div class="wireframe-button">GitHub</div>
+        </div>
+        <div class="col card">
+          <h3>Simple form placeholder</h3>
+          <p style="color:#666;margin-top:10px;">Name / Email / Message (wireframe only)</p>
+          <div class="placeholder" style="min-height:180px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="wireframe-section">
+      <div class="wireframe-label">FOOTER</div>
+      <div class="wireframe-footer">
+        <div class="wireframe-footer-section">
+          <h3>Your Name</h3>
+          <p style="color:#666;">University Portfolio Showcase</p>
+          <p style="color:#666;">AI • Data • Cybersecurity • Product Design</p>
+        </div>
+        <div class="wireframe-footer-section">
+          <h3>Quick Links</h3>
+          <p style="color:#666;">Home / About / Projects / Evidence / Reflection / Contact</p>
+        </div>
+        <div class="wireframe-footer-section">
+          <h3>Connect</h3>
+          <div class="wireframe-social">
+            <div class="wireframe-social-icon"></div>
+            <div class="wireframe-social-icon"></div>
+            <div class="wireframe-social-icon"></div>
+            <div class="wireframe-social-icon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wireframe-copyright">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
