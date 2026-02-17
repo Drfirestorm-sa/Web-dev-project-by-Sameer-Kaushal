@@ -69,6 +69,66 @@ body.dark-mode .skill-card {
     background-color: var(--card-bg);
 }
 
+body.dark-mode .other-skill-card {
+    background-color: var(--card-bg);
+}
+
+body.dark-mode .availability-card {
+    background-color: var(--card-bg);
+}
+
+body.dark-mode .evidence-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .featured-projects {
+    background-color: #111111;
+}
+
+body.dark-mode .progress {
+    background-color: #444444;
+}
+
+body.dark-mode .text-muted {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .form-control {
+    background-color: #3d3d3d;
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #3d3d3d;
+    color: var(--text-dark);
+}
+
+body.dark-mode .alert-success {
+    background-color: #0f3d1f;
+    border-color: #198754;
+    color: #75e09a;
+}
+
+body.dark-mode .alert-warning {
+    background-color: #3d2e00;
+    border-color: #ffc107;
+    color: #ffd454;
+}
+
+body.dark-mode .alert-info {
+    background-color: #003264;
+    border-color: #0dcaf0;
+    color: #6decff;
+}
+
 body {
     font-family: var(--font-primary);
     line-height: 1.6;

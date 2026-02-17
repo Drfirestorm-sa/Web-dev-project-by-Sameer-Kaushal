@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToTopBtn = document.getElementById('backToTop');
     
     window.addEventListener('scroll', function() {
+        if (!backToTopBtn) return;
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             backToTopBtn.classList.add('show');
         } else {
