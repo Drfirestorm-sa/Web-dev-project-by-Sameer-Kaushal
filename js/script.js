@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const cursorRing = document.getElementById('cursorRing');
 
     if (cursorDot && cursorRing && window.innerWidth > 991) {
-        var mouseX = 0, mouseY = 0;
-        var ringX = 0, ringY = 0;
+        let mouseX = 0, mouseY = 0;
+        let ringX = 0, ringY = 0;
 
         document.addEventListener('mousemove', function (e) {
             mouseX = e.clientX;
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         animateRing();
 
         // Hover effect on clickable elements
-        var hoverTargets = document.querySelectorAll('a, button, .btn, .card, .skill-card, .contact-item, .certification-card, .interest-card, .other-skill-card, .evidence-card, .theme-toggle, input, textarea');
+        const hoverTargets = document.querySelectorAll('a, button, .btn, .card, .skill-card, .contact-item, .certification-card, .interest-card, .other-skill-card, .evidence-card, .theme-toggle, input, textarea');
         hoverTargets.forEach(function (el) {
             el.addEventListener('mouseenter', function () {
                 cursorRing.classList.add('hover');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Hide cursor when leaving window
         document.addEventListener('mouseout', function (e) {
-            if (!e.relatedTarget && !e.toElement) {
+            if (!e.relatedTarget) {
                 cursorDot.style.opacity = '0';
                 cursorRing.style.opacity = '0';
             }
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const htmlElement = document.documentElement;
 
     // Determine initial theme: saved > OS preference > light
-    var savedTheme = localStorage.getItem('theme');
-    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 
     // Mark that a theme has been explicitly set (for CSS @media fallback)
     if (savedTheme) {
@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (themeToggle) {
         themeToggle.addEventListener('click', function () {
-            var isDarkMode = document.body.classList.toggle('dark-mode');
-            var theme = isDarkMode ? 'dark' : 'light';
+            const isDarkMode = document.body.classList.toggle('dark-mode');
+            const theme = isDarkMode ? 'dark' : 'light';
             localStorage.setItem('theme', theme);
             htmlElement.setAttribute('data-bs-theme', theme);
             htmlElement.setAttribute('data-theme-set', 'true');
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
             themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
 
             // Announce theme change for screen readers
-            var announcement = document.getElementById('themeAnnouncement');
+            const announcement = document.getElementById('themeAnnouncement');
             if (announcement) {
                 announcement.textContent = isDarkMode ? 'Dark mode enabled' : 'Light mode enabled';
             }
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
             // Only auto-switch if user hasn't manually set a preference
             if (!localStorage.getItem('theme')) {
-                var isDark = e.matches;
+                const isDark = e.matches;
                 if (isDark) {
                     document.body.classList.add('dark-mode');
                     htmlElement.setAttribute('data-bs-theme', 'dark');
@@ -144,9 +144,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollProgress = document.getElementById('scrollProgress');
     function updateScrollProgress() {
         if (!scrollProgress) return;
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
         scrollProgress.style.width = progress + '%';
         scrollProgress.setAttribute('aria-valuenow', Math.round(progress));
     }
@@ -230,16 +230,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }, observerOptions);
 
     // Observe all animation targets
-    var animTargets = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-scale-in');
+    const animTargets = document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-left, .animate-scale-in');
     animTargets.forEach(function(el) {
         el.style.animationPlayState = 'paused';
         observer.observe(el);
     });
 
     // ===== STAGGERED CARD ANIMATIONS =====
-    var cardContainers = document.querySelectorAll('.row');
+    const cardContainers = document.querySelectorAll('.row');
     cardContainers.forEach(function(row) {
-        var cards = row.querySelectorAll('.card, .skill-card, .interest-card, .certification-card, .other-skill-card, .evidence-card, .contact-item, .stat-card');
+        const cards = row.querySelectorAll('.card, .skill-card, .interest-card, .certification-card, .other-skill-card, .evidence-card, .contact-item, .stat-card');
         if (cards.length > 1) {
             cards.forEach(function(card, index) {
                 card.style.transitionDelay = (index * 0.06) + 's';
@@ -250,9 +250,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===== ANIMATED COUNTERS =====
     function animateCounter(el, target, suffix) {
         suffix = suffix || '';
-        var current = 0;
-        var duration = 2000;
-        var increment = target / (duration / 16);
+        let current = 0;
+        const duration = 2000;
+        const increment = target / (duration / 16);
         function step() {
             current += increment;
             if (current >= target) {
@@ -265,13 +265,13 @@ document.addEventListener('DOMContentLoaded', function () {
         step();
     }
 
-    var statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
     if (statNumbers.length > 0) {
-        var counterObserver = new IntersectionObserver(function(entries) {
+        const counterObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
-                    var target = parseInt(entry.target.getAttribute('data-target'), 10);
-                    var suffix = entry.target.textContent.replace(/[0-9]/g, '').trim();
+                    const target = parseInt(entry.target.getAttribute('data-target'), 10);
+                    const suffix = entry.target.textContent.replace(/[0-9]/g, '').trim();
                     animateCounter(entry.target, target, suffix);
                     counterObserver.unobserve(entry.target);
                 }
@@ -341,29 +341,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, false);
     }
 
-    // ===== PROJECT FILTERING =====
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectItems = document.querySelectorAll('.project-item');
-
-    filterBtns.forEach(function(btn) {
-        btn.addEventListener('click', function () {
-            const filter = this.getAttribute('data-filter');
-
-            filterBtns.forEach(function(b) { b.classList.remove('active'); });
-            btn.classList.add('active');
-
-            projectItems.forEach(function(item) {
-                if (filter === 'all' || item.classList.contains(filter)) {
-                    item.style.display = 'block';
-                    setTimeout(function() { item.style.opacity = '1'; }, 10);
-                } else {
-                    item.style.opacity = '0';
-                    setTimeout(function() { item.style.display = 'none'; }, 300);
-                }
-            });
-        });
-    });
-
     // ===== ACTIVE NAV LINK HIGHLIGHTING =====
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(function(link) {
@@ -376,9 +353,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ===== PROGRESS BAR ANIMATION =====
-    var progressBars = document.querySelectorAll('.progress-bar');
+    const progressBars = document.querySelectorAll('.progress-bar');
     if (progressBars.length > 0) {
-        var progressObserver = new IntersectionObserver(function(entries) {
+        const progressObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     entry.target.style.width = entry.target.style.width || entry.target.className.match(/w-(\d+)/)?.[0];
@@ -391,22 +368,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ===== TYPING ANIMATION (Hero) =====
-    var typingElement = document.getElementById('typingText');
+    const typingElement = document.getElementById('typingText');
     if (typingElement) {
-        var phrases = [
+        const phrases = [
             'Computer Science (Data Science & AI) Student',
             'Founder of Fravara',
             'AI & Accessibility Enthusiast',
             'Building the Future of Tech'
         ];
-        var phraseIndex = 0;
-        var charIndex = 0;
-        var isDeleting = false;
-        var typingSpeed = 60;
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 60;
 
         function typePhrase() {
-            var currentPhrase = phrases[phraseIndex];
-            var cursor = '<span class="typing-cursor"></span>';
+            const currentPhrase = phrases[phraseIndex];
+            const cursor = '<span class="typing-cursor"></span>';
 
             if (isDeleting) {
                 charIndex--;
@@ -435,26 +412,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ===== PARALLAX ON HERO ORBS =====
-    var heroSection = document.querySelector('.hero-section');
+    const heroSection = document.querySelector('.hero-section');
     if (heroSection) {
-        var orbs = heroSection.querySelectorAll('.hero-orb');
+        const orbs = heroSection.querySelectorAll('.hero-orb');
         window.addEventListener('mousemove', function(e) {
             if (window.innerWidth <= 991) return;
-            var centerX = window.innerWidth / 2;
-            var centerY = window.innerHeight / 2;
-            var moveX = (e.clientX - centerX) / centerX;
-            var moveY = (e.clientY - centerY) / centerY;
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            const moveX = (e.clientX - centerX) / centerX;
+            const moveY = (e.clientY - centerY) / centerY;
 
             orbs.forEach(function(orb, i) {
-                var speed = (i + 1) * 15;
+                const speed = (i + 1) * 15;
                 orb.style.transform = 'translate(' + (moveX * speed) + 'px, ' + (moveY * speed) + 'px)';
             });
         });
     }
 
     // ===== SMOOTH SECTION REVEAL ON SCROLL =====
-    var sections = document.querySelectorAll('section');
-    var sectionObserver = new IntersectionObserver(function(entries) {
+    const sections = document.querySelectorAll('section');
+    const sectionObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -473,12 +450,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ===== MAGNETIC BUTTON EFFECT =====
-    var magneticBtns = document.querySelectorAll('.hero-buttons .btn, .social-links a');
+    const magneticBtns = document.querySelectorAll('.hero-buttons .btn, .social-links a');
     magneticBtns.forEach(function(btn) {
         btn.addEventListener('mousemove', function(e) {
-            var rect = btn.getBoundingClientRect();
-            var x = e.clientX - rect.left - rect.width / 2;
-            var y = e.clientY - rect.top - rect.height / 2;
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
             btn.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15) + 'px)';
         });
         btn.addEventListener('mouseleave', function() {

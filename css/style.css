@@ -3,6 +3,9 @@
    Premium Professional Design System
    ============================================ */
 
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* ===== DESIGN TOKENS ===== */
 :root {
     /* Colors — refined palette */
@@ -77,9 +80,6 @@ body.dark-mode {
     --glass-border: rgba(255, 255, 255, 0.05);
     --primary-glow: rgba(37, 99, 235, 0.25);
 }
-
-/* ===== GOOGLE FONTS IMPORT ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ===== CUSTOM SCROLLBAR ===== */
 ::-webkit-scrollbar {
@@ -184,10 +184,6 @@ body {
 
 /* Selection style */
 ::selection {
-    background: var(--primary);
-    color: white;
-}
-::-moz-selection {
     background: var(--primary);
     color: white;
 }
