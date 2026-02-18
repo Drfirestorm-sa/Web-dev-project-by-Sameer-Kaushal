@@ -1413,7 +1413,13 @@ body.dark-mode .certification-section {
 }
 
 .contact-form .form-control::placeholder {
-    color: transparent;
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+.contact-form .form-floating > .form-control::placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
 }
 
 .message-textarea {
@@ -1787,7 +1793,13 @@ body.dark-mode .form-control::placeholder {
 }
 
 body.dark-mode .contact-form .form-control::placeholder {
-    color: transparent;
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+body.dark-mode .contact-form .form-floating > .form-control::placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
 }
 
 body.dark-mode .form-floating label {
