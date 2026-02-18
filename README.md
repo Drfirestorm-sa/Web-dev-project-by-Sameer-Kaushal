@@ -47,7 +47,6 @@ The site is fully responsive, supports dark mode, includes scroll-reveal animati
 | 🛠️ **Skills** | `skills.html` | Technical skill cards, animated proficiency bars (8 skills), professional skills, achievements & certifications |
 | 📬 **Contact** | `contact.html` | Contact info cards (email, LinkedIn, GitHub) + validated form with Formspree integration |
 | 🔬 **Fravara Case Study** | `fravara-case-study.html` | Deep-dive: overview, problem statement, solution features, design process, results, tech stack, lessons learned |
-| 📐 **Wireframe** | `wireframe.html` | Original low-fidelity design wireframe created during planning (standalone CSS, no Bootstrap) |
 
 ---
 
@@ -100,7 +99,7 @@ The site is fully responsive, supports dark mode, includes scroll-reveal animati
 | ![JS](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | ES6+ | DOM manipulation, theme toggle, form validation |
 | ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white) | 5.3.3 | Grid, navbar, cards, responsive utilities |
 | ![Font Awesome](https://img.shields.io/badge/-Font_Awesome-528DD7?style=flat-square&logo=fontawesome&logoColor=white) | 6.4.0 | Icon library |
-| ![Google Fonts](https://img.shields.io/badge/-Google_Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Poppins | Typography |
+| ![Google Fonts](https://img.shields.io/badge/-Google_Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Inter, Space Grotesk, JetBrains Mono | Typography |
 | ![Formspree](https://img.shields.io/badge/-Formspree-FF4136?style=flat-square&logo=formspree&logoColor=white) | — | Contact form backend |
 
 > All libraries are loaded via **CDN** — no local installation or build step required.
@@ -118,14 +117,21 @@ Web-dev-project-by-Sameer-Kaushal/
 ├── 📄 skills.html                 # Skills, proficiency bars, achievements
 ├── 📄 contact.html                # Contact form + social links
 ├── 📄 fravara-case-study.html     # Fravara AI Smart Glasses case study
-├── 📄 wireframe.html              # Original design wireframe
 │
-├── 🎨 style.css                   # All custom CSS (~807 lines)
-├── ⚡ script.js                   # All JavaScript (~193 lines)
+├── 📁 css/
+│   └── 🎨 style.css               # All custom CSS (~1,892 lines)
 │
-├── 🖼️ Sameer pic about me.JPG     # Profile photo
-├── 🖼️ fravara pickaball 3.png     # Fravara project image
+├── 📁 js/
+│   └── ⚡ script.js               # All JavaScript (~413 lines)
 │
+├── 📁 images/
+│   ├── 🖼️ Sameer pic about me.JPG # Profile photo
+│   └── 🖼️ fravara pickaball 3.png # Fravara project image
+│
+├── 📄 Requirements Table.md       # Self-assessment requirements table
+├── 📄 requriment.txt              # Requirements evidence (plain text)
+├── 📄 SECURITY.md                 # Security policy
+├── 📄 .gitignore                  # Git ignore rules
 └── 📝 README.md                   # This file
 ```
 
@@ -178,8 +184,9 @@ Development used a **branching strategy** with `main` (stable) and `test` (activ
 | 8 | `feat: implement dark mode toggle and back-to-top button across all pages` | Dark mode feature |
 | 9 | `Add Fravara case study page` | New case study page |
 | 10 | `Refactor code structure for improved readability and maintainability` | Code cleanup |
+| 11 | `refactor: organise assets into css/, js/, images/ folders` | Project restructuring into industry-standard directory layout |
 
-> Commit messages follow conventional prefixes (`feat:`, `docs:`, `chore:`) demonstrating incremental development.
+> Commit messages follow conventional prefixes (`feat:`, `docs:`, `chore:`, `refactor:`) demonstrating incremental development.
 
 ---
 
