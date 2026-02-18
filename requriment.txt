@@ -1,0 +1,81 @@
+Requirements Table — Self-Assessment
+=====================================
+
+Student Name: Sameer Kaushal
+Student ID: 2686269@dundee.ac.uk
+Website Link: https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/
+GitHub Repository Link: https://github.com/Drfirestorm-sa/Web-dev-project-by-Sameer-Kaushal
+
+
+==========================================================
+BAND 1 – PASS REQUIREMENTS
+==========================================================
+
+Requirement: Semantic HTML
+Description: The site uses correct HTML5 semantic elements with a logical heading structure.
+Evidence:
+I built every page using proper HTML5 semantic elements that convey the meaning and structure of the content. I wrapped the navigation bar in a <header> element on each page, and I used a <nav> element with Bootstrap's navbar component for the site-wide menu. I divided the main content into clearly defined <section> elements — for example, I enclosed the hero section, stats section, and featured projects section on the home page in their own <section> tags with descriptive class names. I used the <footer> element consistently across all pages to present contact information and social links. I followed a logical heading hierarchy throughout: each page has a single <h1> for its main title (e.g., "About Me," "My Projects," "My Skills"), with <h2> elements for major content area headings and <h3> elements for individual items such as project card titles, timeline entries, and skill card labels. I also used additional semantic elements including <ol> with <li> for the breadcrumb navigation on the Fravara case study page, <dl>, <dt>, and <dd> for definition lists in the case study overview, and a <form> element with properly labelled inputs on the contact page. I applied the visually-hidden class to provide screen-reader-only headings where needed (e.g., <h2 class="visually-hidden">Stats</h2>), ensuring assistive technologies can parse the page structure correctly.
+
+
+Requirement: Three-Page Website
+Description: Includes at minimum: Home, About, Portfolio. Pages are linked via navigation.
+Evidence:
+I significantly exceeded the three-page minimum by building six fully developed pages plus a wireframe page. My Home page (index.html) features a full-viewport hero section with a profile introduction, animated statistics counters, and three featured project cards. My About page (about.html) covers a detailed profile bio, an education timeline, work milestones, a reflection and evaluation section, and an interests and values grid. My Projects page (projects.html) serves as the portfolio, displaying seven project cards in a responsive three-column grid along with an evidence and documentation section containing wireframes and code snippets. I also created a Skills page (skills.html), which presents technical skill cards with animated proficiency progress bars and achievements; a Contact page (contact.html), which offers contact information cards alongside a validated form with Formspree integration; and a Fravara Case Study page (fravara-case-study.html), which provides a deep-dive into my flagship project. I interlinked all pages through a shared Bootstrap navbar that appears identically on every page, containing links to Home, About, Projects, Evidence, Reflection, Skills, and Contact. I visually highlighted the active page in the navigation using both a CSS active state and JavaScript-based current-page detection.
+
+
+Requirement: Responsive Design
+Description: Layout adapts correctly on desktop, tablet, and mobile. Navigation remains usable.
+Evidence:
+I implemented a comprehensive responsive design strategy by combining Bootstrap 5.3's built-in grid system with four custom CSS media query breakpoints at 1199px, 991px, 767px, and 575px. On desktop screens, I display all navigation links horizontally with full text labels, and I render content areas such as the project cards in a three-column grid layout (col-md-6 col-lg-4). At the 991px breakpoint (tablet), I made the navbar collapse into a hamburger toggle button that, when tapped, reveals a dropdown menu styled with a glassmorphism background and rounded corners. I switched the hero section to centred text alignment, made the hero buttons flex-wrapped and centred, and scaled the profile image down to 240px. At 767px, I reduced the page banner padding, shrank stat numbers to 2rem, adjusted the timeline layout with reduced padding, and hid the scroll indicator. At 575px (small mobile), I dropped the hero heading to 2.2rem, expanded call-to-action buttons to full width for easy tapping, and reduced the profile image further to 170px. I also ensured that the Bootstrap grid classes make project cards automatically reflow from three columns to two columns to a single column as the viewport narrows, and I hid the custom cursor elements on screens below 991px since they are irrelevant to touch devices. I included a viewport meta tag with width=device-width, initial-scale=1.0 on every page.
+
+
+Requirement: CSS / CSS Library Use
+Description: Uses CSS and/or a CSS library (e.g., Bootstrap) to structure and style the site.
+Evidence:
+I made extensive use of both Bootstrap 5.3.3 and a custom CSS file (style.css) spanning approximately 1,800 lines. I loaded Bootstrap via CDN on every page and used its foundational layout through the grid system (container, row, col-md-*, col-lg-*), the responsive navbar component, card components for projects and skills, form controls with floating labels, utility classes for spacing (py-5, mb-4, mt-5), alignment (text-center, text-md-end, align-items-center), display (d-flex, d-inline-block), and the badge component for skill tags. In my custom CSS file, I implemented a complete design token system using CSS custom properties (--primary, --bg-primary, --font-body, --transition-base, etc.), a full dark mode theme with 20+ variable overrides, custom animations (fade-in-up, scale-in, spin, gradient shift), glassmorphism effects on the navbar and modal backgrounds, a scroll progress bar, a custom cursor with hover interactions, a typing cursor animation, styled scrollbar via WebKit pseudo-elements, timeline styling for education and experience sections, card hover transforms with refined shadows, and a complete print stylesheet. I imported three Google Fonts families (Inter, Space Grotesk, JetBrains Mono) for typography refinement.
+
+
+Requirement: Extensible Portfolio Page
+Description: Portfolio items are presented in a repeatable structure that allows easy future additions.
+Evidence:
+I designed the Projects page (projects.html) with a uniform, repeatable card-based structure for all portfolio items. I rendered each project as a Bootstrap card inside a grid column (col-md-6 col-lg-4 mb-4 project-item), and every card follows an identical HTML template: a card-img-top image, a card-body containing an h3 card-title, a card-text paragraph description, a skill-tags div with badge elements for technology labels, and optional action buttons. This consistent template means that I can add a new project by simply copying an existing card block, updating the image source, title, description, and skill badges, and pasting it into the projects grid container (id="projectsGrid"). The Bootstrap grid system automatically handles the layout — a new card will seamlessly flow into the three-column desktop grid and reflow to two columns and then one column on smaller screens without any additional CSS. I currently display seven projects using this identical structure, demonstrating that the pattern scales naturally. I also used the same extensible card system for the Evidence & Documentation section, where evidence cards follow a parallel repeatable template with image, heading, and description.
+
+
+Requirement: Basic GitHub Usage
+Description: The site code is hosted in a GitHub repository with at least a small number of meaningful commits (not a single upload).
+Evidence:
+I hosted the project in a public GitHub repository at https://github.com/Drfirestorm-sa/Web-dev-project-by-Sameer-Kaushal. I tracked development through multiple meaningful commits that demonstrate incremental progress rather than a single bulk upload. My commit history includes at least ten distinct commits with descriptive messages following conventional prefixes: "Initial commit" for repository creation, "Add initial HTML and CSS files for portfolio website" for the first version, "Add wireframe HTML structure for university portfolio" for the wireframe, "feat: add initial portfolio website with interactive components" for the rebuilt interactive version, "feat: implement dark mode toggle and back-to-top button across all pages" for the dark mode feature, "Add Fravara case study page" for the case study, and "Refactor code structure for improved readability and maintainability" for code cleanup. Each commit represents a discrete development milestone, showing the project evolving from an initial wireframe through to a fully featured, polished portfolio.
+
+
+Requirement: Deployment
+Description: The website is deployed publicly (e.g. GitHub Pages). The link works.
+Evidence:
+I deployed the website publicly using GitHub Pages, and it is accessible at https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/. I configured the deployment to serve from the main branch's root folder, and any future commits I make to the main branch trigger automatic redeployment. I included the live site link prominently in the README. All pages, images, CSS, and JavaScript files load correctly from the deployed URL since I loaded all libraries (Bootstrap, Font Awesome, Google Fonts) via CDN and used relative paths for all internal links.
+
+
+Requirement: Code Quality
+Description: HTML validates with no critical errors. Code is well-structured and organised.
+Evidence:
+I ensured all HTML files use the HTML5 doctype declaration (<!DOCTYPE html>) with the lang="en" attribute, include required <meta charset="UTF-8"> and viewport meta tags, and feature descriptive <title> and <meta name="description"> elements for each page. I cleanly indented my code with consistent formatting, and I preceded each major section with HTML comments (e.g., <!-- Page Loader -->, <!-- Custom Cursor -->, <!-- Scroll Progress Bar -->, <!-- Featured Projects -->) that clearly label the purpose of each block. I organised my CSS file into logically named sections with prominent comment headers (DESIGN TOKENS, DARK MODE, BASE STYLES, NAVBAR, HERO SECTION, etc.), and I used CSS custom properties to centralise design values and avoid repetition. I structured my JavaScript file with named sections and used modern practices including addEventListener, IntersectionObserver for scroll animations, requestAnimationFrame for smooth cursor tracking, localStorage for theme persistence, and the Fetch API for form submission. I gave all images descriptive alt attributes, I added rel="noopener noreferrer" to external links for security, and I included title attributes on interactive elements like the navbar toggler and theme toggle for accessibility.
+
+
+==========================================================
+BAND 2 – DEVELOPMENT CHECKS
+==========================================================
+
+Requirement: Bootstrap Components
+Description: Uses at least one Bootstrap component (e.g., cards, navbars, grid).
+Evidence:
+I made heavy use of multiple Bootstrap 5.3 components throughout every page. I used the navbar component (navbar, navbar-expand-lg, navbar-brand, navbar-toggler, navbar-collapse, nav-item, nav-link) to provide the responsive site-wide navigation that collapses to a hamburger menu on smaller screens. I used Bootstrap cards (card, card-body, card-title, card-text, card-img-top) for project displays on both the Home and Projects pages, for skill cards on the Skills page, and for evidence cards in the documentation section. I structured every page layout with the Bootstrap grid system (container, row, col-md-*, col-lg-*, col-6), controlling how content reflows across different viewport widths. I also used additional Bootstrap components including badges (badge bg-primary) for skill tags on project cards, breadcrumbs (breadcrumb, breadcrumb-item) on the Fravara case study page, progress bars with ARIA attributes on the Skills page, form controls with floating labels (form-floating, form-control) on the contact form, and buttons (btn, btn-primary, btn-outline-light, btn-lg, btn-sm) extensively for calls to action. I applied Bootstrap utility classes for spacing, alignment, shadows, typography, and display throughout.
+
+
+Requirement: Typography Improvements
+Description: Uses Google Fonts or styling utilities to improve text presentation.
+Evidence:
+I imported three Google Fonts families to create a refined typographic hierarchy that goes well beyond browser defaults. I use Inter (weights 300–800) as the primary body font, providing excellent readability and a modern, clean appearance across all body text and navigation. I use Space Grotesk (weights 400–700) as the display font for all headings (h1 through h6 and section titles), giving them a distinctive, geometric character with tighter letter-spacing (letter-spacing: -0.02em for headings, -0.03em for h1). I use JetBrains Mono (weights 400–500) as a monospace font for the section eyebrow labels (e.g., "Portfolio," "My Work," "Who I Am"), adding a technical, code-like accent that reinforces the developer portfolio aesthetic. I defined the font stack through CSS custom properties (--font-body, --font-display, --font-mono) with robust fallbacks including -apple-system, BlinkMacSystemFont, and Segoe UI. I also applied -webkit-font-smoothing: antialiased and -moz-osx-font-smoothing: grayscale for crisp rendering, and I created a gradient text effect (.text-gradient) that I applied to my hero name for visual emphasis.
+
+
+Requirement: Refined Layout Control
+Description: Makes effective use of spacing, alignment, and utility classes.
+Evidence:
+I demonstrated precise layout control through a combination of Bootstrap utility classes and custom CSS custom properties for spacing and alignment. I applied Bootstrap spacing utilities such as py-5, mb-4, mb-5, mt-5, me-2, ms-auto, px-4, and p-3 consistently throughout every page to create even vertical rhythm and comfortable whitespace between sections, cards, and text elements. I used alignment utilities including text-center, text-md-end, align-items-center, and justify-content-center to ensure elements are appropriately positioned within their containers. I defined a --section-padding CSS variable (7rem on desktop, 5rem on tablet) in my design token system to maintain consistent vertical spacing across all page sections. I used position-relative with layered decorative orb elements in my hero section for depth, and I centred the profile image with d-inline-block and position-relative. I gave cards h-100 to equalise heights within rows, and I used gap-conscious column classes (col-6 col-md-3

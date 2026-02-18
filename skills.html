@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills of Sameer Kaushal — Python, JavaScript, C++, AI, NLP, cybersecurity, UX design, leadership, and more.">
     <title>Skills | Sameer Kaushal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +12,25 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Sameer <span class="text-primary">Kaushal</span></a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <span class="brand-mark">SK</span>
+                    Sameer <span class="text-primary">Kaushal</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,6 +39,8 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html#evidence">Evidence</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html#reflection">Reflection</a></li>
                         <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item ms-2">
@@ -37,18 +55,21 @@
     </header>
 
     <section class="page-banner">
-        <h2 class="animate-fade-in-up">My Skills</h2>
+        <h1 class="animate-fade-in-up">My Skills</h1>
         <p class="animate-fade-in-up delay-100">Technical, professional, and leadership skills</p>
     </section>
 
     <section class="skills-intro container py-5">
-        <h3 class="fw-bold mb-4 animate-fade-in-up delay-200">Technical Skills</h3>
+        <div class="text-center mb-5">
+            <span class="section-eyebrow animate-fade-in-up delay-100">What I Work With</span>
+            <h2 class="fw-bold mb-3 animate-fade-in-up delay-200">Technical Skills</h2>
+        </div>
         <div class="row animate-fade-in-up delay-300">
             <div class="col-md-4 mb-4">
                 <div class="card skill-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-code fa-3x mb-3"></i>
-                        <h4>Programming</h4>
+                        <h3>Programming</h3>
                         <p>Python, JavaScript, C++</p>
                     </div>
                 </div>
@@ -57,7 +78,7 @@
                 <div class="card skill-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-brain fa-3x mb-3"></i>
-                        <h4>AI & Data</h4>
+                        <h3>AI &amp; Data</h3>
                         <p>NLP, reinforcement learning basics, ML integration</p>
                     </div>
                 </div>
@@ -66,46 +87,131 @@
                 <div class="card skill-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-tools fa-3x mb-3"></i>
-                        <h4>Tools</h4>
+                        <h3>Tools</h3>
                         <p>Salesforce, Jira, Automate, Evolv</p>
                     </div>
                 </div>
             </div>
         </div>
-        <h3 class="mt-5 fw-bold animate-fade-in-up delay-400">Business & UX</h3>
+
+        <!-- Skill Progress Bars -->
+        <div class="text-center mt-5 mb-4">
+            <span class="section-eyebrow animate-fade-in-up delay-300">Expertise Level</span>
+            <h2 class="fw-bold animate-fade-in-up delay-300">Proficiency</h2>
+        </div>
+        <div class="row animate-fade-in-up delay-400">
+            <div class="col-lg-6 mb-4">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fab fa-python text-primary me-2"></i>Python</span>
+                        <span class="text-muted small">85%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-primary w-85" role="progressbar" title="Python proficiency 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fab fa-js-square text-warning me-2"></i>JavaScript</span>
+                        <span class="text-muted small">75%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-warning w-75-custom" role="progressbar" title="JavaScript proficiency 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fab fa-html5 text-danger me-2"></i>HTML &amp; CSS</span>
+                        <span class="text-muted small">90%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-danger w-90" role="progressbar" title="HTML &amp; CSS proficiency 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fas fa-copyright text-info me-2"></i>C++</span>
+                        <span class="text-muted small">65%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-info w-65" role="progressbar" title="C++ proficiency 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fas fa-brain text-success me-2"></i>AI &amp; NLP</span>
+                        <span class="text-muted small">70%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-success w-70" role="progressbar" title="AI &amp; NLP proficiency 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fas fa-shield-alt text-danger me-2"></i>Cybersecurity</span>
+                        <span class="text-muted small">60%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-danger w-60" role="progressbar" title="Cybersecurity proficiency 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fas fa-pencil-ruler text-primary me-2"></i>UX &amp; Wireframing</span>
+                        <span class="text-muted small">80%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-primary w-80" role="progressbar" title="UX &amp; Wireframing proficiency 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold"><i class="fas fa-database text-secondary me-2"></i>SQL &amp; Databases</span>
+                        <span class="text-muted small">65%</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-secondary w-65" role="progressbar" title="SQL &amp; Databases proficiency 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5 fw-bold text-center animate-fade-in-up delay-400">Business &amp; UX</h2>
         <div class="row animate-fade-in-up delay-400">
             <div class="col-md-6 mb-3">
                 <div class="other-skill-card">
-                    <h5 class="fw-bold"><i class="fas fa-briefcase text-primary me-2"></i>Business Strategy</h5>
+                    <h3 class="fw-bold"><i class="fas fa-briefcase text-primary me-2"></i>Business Strategy</h3>
                     <p class="mb-0">Market research, product strategy, and business analysis.</p>
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <div class="other-skill-card">
-                    <h5 class="fw-bold"><i class="fas fa-pencil-ruler text-primary me-2"></i>User Experience</h5>
+                    <h3 class="fw-bold"><i class="fas fa-pencil-ruler text-primary me-2"></i>User Experience</h3>
                     <p class="mb-0">Wireframing, prototyping, and user-centered design.</p>
                 </div>
             </div>
         </div>
 
-        <h3 class="mt-5 fw-bold animate-fade-in-up delay-500">Professional</h3>
+        <h2 class="mt-5 fw-bold text-center animate-fade-in-up delay-500">Professional</h2>
         <div class="row animate-fade-in-up delay-500">
             <div class="col-md-4 mb-3">
                 <div class="other-skill-card text-center">
                     <i class="fas fa-users fa-2x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Leadership</h5>
+                    <h3 class="fw-bold">Leadership</h3>
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="other-skill-card text-center">
                     <i class="fas fa-comments fa-2x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Communication</h5>
+                    <h3 class="fw-bold">Communication</h3>
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="other-skill-card text-center">
                     <i class="fas fa-handshake fa-2x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Collaboration</h5>
+                    <h3 class="fw-bold">Collaboration</h3>
                 </div>
             </div>
         </div>
@@ -113,7 +219,7 @@
 
     <section class="certification-section bg-light py-5">
         <div class="container">
-            <h3 class="text-center mb-5 fw-bold animate-fade-in-up">Achievements</h3>
+            <h2 class="text-center mb-5 fw-bold animate-fade-in-up">Achievements</h2>
             <div class="row animate-fade-in-up delay-100">
                 <div class="col-md-6 mb-4">
                     <div class="certification-card h-100">
@@ -121,7 +227,7 @@
                             <i class="fas fa-medal fa-2x"></i>
                         </div>
                         <div class="certification-info">
-                            <h5 class="fw-bold mb-1">Duke of Edinburgh Gold Award</h5>
+                            <h3 class="fw-bold mb-1">Duke of Edinburgh Gold Award</h3>
                             <div class="certification-date">2025</div>
                             <p class="mb-0 small text-muted">Demonstrated leadership, resilience, and commitment.</p>
                         </div>
@@ -133,7 +239,7 @@
                             <i class="fas fa-award fa-2x"></i>
                         </div>
                         <div class="certification-info">
-                            <h5 class="fw-bold mb-1">Ignite Award</h5>
+                            <h3 class="fw-bold mb-1">Ignite Award</h3>
                             <div class="certification-date">2019–2022</div>
                             <p class="mb-0 small text-muted">Excellence in personal development and skills.</p>
                         </div>
@@ -145,7 +251,7 @@
                             <i class="fas fa-star fa-2x"></i>
                         </div>
                         <div class="certification-info">
-                            <h5 class="fw-bold mb-1">Curriculum Awards</h5>
+                            <h3 class="fw-bold mb-1">Curriculum Awards</h3>
                             <div class="certification-date">2023</div>
                             <p class="mb-0 small text-muted">Outstanding performance in ICT & Geography.</p>
                         </div>
@@ -157,7 +263,7 @@
                             <i class="fas fa-user-tie fa-2x"></i>
                         </div>
                         <div class="certification-info">
-                            <h5 class="fw-bold mb-1">House Captain</h5>
+                            <h3 class="fw-bold mb-1">House Captain</h3>
                             <div class="certification-date">2020–2023</div>
                             <p class="mb-0 small text-muted">Student leadership and team coordination.</p>
                         </div>
@@ -169,7 +275,7 @@
                             <i class="fas fa-calculator fa-2x"></i>
                         </div>
                         <div class="certification-info">
-                            <h5 class="fw-bold mb-1">Maths Junior Challenger</h5>
+                            <h3 class="fw-bold mb-1">Maths Junior Challenger</h3>
                             <div class="certification-date">2019</div>
                             <p class="mb-0 small text-muted">Bronze Award winner.</p>
                         </div>
@@ -183,13 +289,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <h5 class="fw-bold">Sameer Kaushal</h5>
+                    <h4 class="fw-bold">Sameer Kaushal</h4>
                     <p class="text-white-50 mb-0">Dundee, UK • <a href="mailto:kaushalsameer731@gmail.com" class="text-white text-decoration-none">kaushalsameer731@gmail.com</a></p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/sameerkaushal" class="me-3" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sameerkaushal" class="me-3" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
