@@ -299,6 +299,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const formData = new FormData(contactForm);
 
+                const formSuccess = document.getElementById('formSuccess');
+                const formError = document.getElementById('formError');
+
+                // Hide any previous messages
+                if (formSuccess) formSuccess.classList.add('d-none');
+                if (formError) formError.classList.add('d-none');
+
                 fetch('https://formspree.io/f/xzzbwzby', {
                     method: 'POST',
                     body: formData,
@@ -310,21 +317,23 @@ document.addEventListener('DOMContentLoaded', function () {
                         submitBtn.classList.replace('btn-primary', 'btn-success');
                         contactForm.reset();
                         contactForm.classList.remove('was-validated');
+                        if (formSuccess) formSuccess.classList.remove('d-none');
                     } else {
                         throw new Error('Form submission failed');
                     }
                 })
                 .catch(function(error) {
                     console.error('Error:', error);
-                    submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
-                    submitBtn.classList.replace('btn-primary', 'btn-success');
-                    contactForm.reset();
+                    submitBtn.innerHTML = '<i class="fas fa-times me-2"></i>Failed to Send';
+                    submitBtn.classList.replace('btn-primary', 'btn-danger');
+                    if (formError) formError.classList.remove('d-none');
                 })
                 .finally(function() {
                     setTimeout(function() {
                         submitBtn.innerHTML = originalText;
                         submitBtn.disabled = false;
-                        submitBtn.classList.replace('btn-success', 'btn-primary');
+                        submitBtn.classList.remove('btn-success', 'btn-danger');
+                        submitBtn.classList.add('btn-primary');
                     }, 3000);
                 });
             }
