@@ -402,6 +402,60 @@ body.dark-mode .navbar-toggler-icon {
     box-shadow: 0 4px 15px var(--primary-glow);
 }
 
+/* ===== NAV DROPDOWNS ===== */
+.navbar .dropdown-menu {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow-hover);
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+    min-width: 180px;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar .dropdown-item {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.55rem 1.25rem;
+    border-radius: 0;
+    transition: all var(--transition-fast);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    color: var(--primary);
+    background: var(--primary-glow);
+}
+
+.navbar .dropdown-toggle::after {
+    margin-left: 0.35em;
+    vertical-align: 0.15em;
+    font-size: 0.7em;
+}
+
+body.dark-mode .navbar .dropdown-menu {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .navbar .dropdown-item {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .navbar .dropdown-item:hover,
+body.dark-mode .navbar .dropdown-item:focus {
+    color: var(--primary-light);
+    background: rgba(37, 99, 235, 0.15);
+}
+
 /* ===== HERO SECTION ===== */
 .hero-section {
     min-height: 100vh;
@@ -1605,6 +1659,82 @@ footer a:hover {
 .delay-600 { animation-delay: 0.6s; }
 .delay-700 { animation-delay: 0.7s; }
 
+/* ===== SKIP TO CONTENT (Accessibility) ===== */
+.skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    z-index: 100000;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: top 0.2s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+.skip-to-content:focus {
+    top: 0;
+    color: #fff;
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ===== FOCUS VISIBLE (Keyboard Accessibility) ===== */
+*:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 3px;
+}
+
+.form-control:focus-visible {
+    outline: none; /* uses box-shadow instead */
+}
+
+#backToTop:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* ===== DARK MODE OVERRIDES ===== */
 body.dark-mode .bg-light {
     background-color: var(--bg-secondary) !important;
@@ -1612,6 +1742,10 @@ body.dark-mode .bg-light {
 
 body.dark-mode .bg-white {
     background-color: var(--card-bg) !important;
+}
+
+body.dark-mode .text-dark {
+    color: var(--text-primary) !important;
 }
 
 body.dark-mode .text-muted {
@@ -1622,12 +1756,38 @@ body.dark-mode .shadow-sm {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
 }
 
+body.dark-mode .shadow,
+body.dark-mode .shadow-lg {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
 body.dark-mode .border {
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .border-top,
+body.dark-mode .border-bottom,
+body.dark-mode .border-start,
+body.dark-mode .border-end {
     border-color: var(--border-color) !important;
 }
 
 body.dark-mode .form-control {
     background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: var(--text-muted);
+}
+
+body.dark-mode .form-floating label {
+    color: var(--text-muted);
+}
+
+body.dark-mode .form-select {
+    background-color: var(--bg-tertiary);
     border-color: var(--border-color);
     color: var(--text-primary);
 }
@@ -1681,6 +1841,138 @@ body.dark-mode .progress {
 body.dark-mode .contact-form-container {
     background: var(--card-bg);
     border-color: var(--border-color);
+}
+
+/* Dark mode — Bootstrap table overrides */
+body.dark-mode .table {
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Dark mode — breadcrumbs */
+body.dark-mode .breadcrumb {
+    background: transparent;
+}
+
+body.dark-mode .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-muted);
+}
+
+body.dark-mode .breadcrumb-item.active {
+    color: var(--text-muted);
+}
+
+/* Dark mode — list group */
+body.dark-mode .list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Dark mode — accordion */
+body.dark-mode .accordion-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-light);
+}
+
+/* Dark mode — modal */
+body.dark-mode .modal-content {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: var(--border-color);
+}
+
+/* Dark mode — dropdown */
+body.dark-mode .dropdown-menu {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .dropdown-item {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item:focus {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+/* Dark mode — card explicitly */
+body.dark-mode .card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode .card-body {
+    color: var(--text-primary);
+}
+
+body.dark-mode .card-title {
+    color: var(--text-primary);
+}
+
+body.dark-mode .card-text {
+    color: var(--text-secondary);
+}
+
+/* Dark mode — footer (already dark, ensure consistency) */
+body.dark-mode footer {
+    background: #060a12 !important;
+    border-top-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Dark mode — page sections */
+body.dark-mode .stats-section {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .featured-projects {
+    background: var(--bg-primary);
+}
+
+/* Dark mode — generic white backgrounds */
+body.dark-mode [class*="bg-white"] {
+    background-color: var(--card-bg) !important;
+}
+
+/* Dark mode — input group */
+body.dark-mode .input-group-text {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Dark mode — close button */
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1787,9 +2079,68 @@ body.dark-mode .contact-form-container {
     }
 }
 
+/* ===== PREFERS REDUCED MOTION (Accessibility) ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hero-orb,
+    .loader-spinner,
+    .typing-cursor,
+    .status-dot,
+    .scroll-indicator .scroll-line,
+    .progress-bar::after {
+        animation: none !important;
+    }
+
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-scale-in {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    .card:hover,
+    .skill-card:hover,
+    .interest-card:hover,
+    .certification-card:hover,
+    .other-skill-card:hover,
+    .evidence-card:hover,
+    .contact-item:hover {
+        transform: none !important;
+    }
+}
+
+/* ===== PREFERS COLOR SCHEME (auto dark) ===== */
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme-set]) body {
+        --bg-primary: #0a0f1a;
+        --bg-secondary: #111827;
+        --bg-tertiary: #1f2937;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --text-muted: #64748b;
+        --border-color: #1e293b;
+        --card-bg: #111827;
+        --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+        --card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.3);
+        --card-shadow-elevated: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        --glass-bg: rgba(17, 24, 39, 0.8);
+        --glass-border: rgba(255, 255, 255, 0.05);
+        --primary-glow: rgba(37, 99, 235, 0.25);
+    }
+}
+
 /* ===== PRINT STYLES ===== */
 @media print {
-    .navbar, .scroll-progress, #backToTop, .cursor-dot, .cursor-ring, .page-loader {
+    .navbar, .scroll-progress, #backToTop, .cursor-dot, .cursor-ring, .page-loader, .skip-to-content {
         display: none !important;
     }
     body {

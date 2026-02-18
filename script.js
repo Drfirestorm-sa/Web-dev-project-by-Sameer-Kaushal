@@ -74,22 +74,69 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('themeToggle');
     const htmlElement = document.documentElement;
 
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Determine initial theme: saved > OS preference > light
+    var savedTheme = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    // Mark that a theme has been explicitly set (for CSS @media fallback)
+    if (savedTheme) {
+        htmlElement.setAttribute('data-theme-set', 'true');
+    }
+
     htmlElement.setAttribute('data-bs-theme', currentTheme);
     if (currentTheme === 'dark') {
         document.body.classList.add('dark-mode');
-        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        if (themeToggle) {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+            themeToggle.setAttribute('aria-label', 'Switch to light mode');
+        }
+    } else {
+        if (themeToggle) {
+            themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+        }
     }
 
     if (themeToggle) {
         themeToggle.addEventListener('click', function () {
-            const isDarkMode = document.body.classList.toggle('dark-mode');
-            const theme = isDarkMode ? 'dark' : 'light';
+            var isDarkMode = document.body.classList.toggle('dark-mode');
+            var theme = isDarkMode ? 'dark' : 'light';
             localStorage.setItem('theme', theme);
             htmlElement.setAttribute('data-bs-theme', theme);
+            htmlElement.setAttribute('data-theme-set', 'true');
             themeToggle.innerHTML = isDarkMode
-                ? '<i class="fas fa-sun"></i>'
-                : '<i class="fas fa-moon"></i>';
+                ? '<i class="fas fa-sun" aria-hidden="true"></i>'
+                : '<i class="fas fa-moon" aria-hidden="true"></i>';
+            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+
+            // Announce theme change for screen readers
+            var announcement = document.getElementById('themeAnnouncement');
+            if (announcement) {
+                announcement.textContent = isDarkMode ? 'Dark mode enabled' : 'Light mode enabled';
+            }
+        });
+    }
+
+    // Listen for OS color scheme changes
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            // Only auto-switch if user hasn't manually set a preference
+            if (!localStorage.getItem('theme')) {
+                var isDark = e.matches;
+                if (isDark) {
+                    document.body.classList.add('dark-mode');
+                    htmlElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    htmlElement.setAttribute('data-bs-theme', 'light');
+                }
+                if (themeToggle) {
+                    themeToggle.innerHTML = isDark
+                        ? '<i class="fas fa-sun" aria-hidden="true"></i>'
+                        : '<i class="fas fa-moon" aria-hidden="true"></i>';
+                    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+                }
+            }
         });
     }
 
@@ -97,10 +144,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollProgress = document.getElementById('scrollProgress');
     function updateScrollProgress() {
         if (!scrollProgress) return;
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
         scrollProgress.style.width = progress + '%';
+        scrollProgress.setAttribute('aria-valuenow', Math.round(progress));
     }
 
     // ===== NAVBAR SCROLL EFFECT =====
