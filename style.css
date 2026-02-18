@@ -1399,7 +1399,17 @@ body.dark-mode .certification-section {
     border-radius: var(--radius-md);
     color: var(--text-primary);
     transition: all var(--transition-base);
-    padding: 0.9rem 1rem;
+}
+
+.contact-form .form-floating > .form-control {
+    height: calc(3.5rem + 2px);
+    padding: 1rem 0.75rem;
+}
+
+.contact-form .form-floating > .form-control:focus,
+.contact-form .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
 }
 
 .contact-form .form-control:focus {
@@ -1408,23 +1418,26 @@ body.dark-mode .certification-section {
     background: var(--bg-primary);
 }
 
-.contact-form .form-floating label {
+.contact-form .form-floating > label {
     color: var(--text-muted);
+    padding: 1rem 0.75rem;
 }
 
-.contact-form .form-control::placeholder {
-    color: transparent !important;
-    opacity: 0 !important;
-}
-
+/* Hide placeholder text - only show floating label */
 .contact-form .form-floating > .form-control::placeholder {
     color: transparent !important;
     opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 .message-textarea {
     min-height: 140px;
+    height: auto !important;
     resize: vertical;
+}
+
+.contact-form .form-floating > textarea.form-control {
+    height: 140px;
 }
 
 /* ===== FOOTER ===== */
