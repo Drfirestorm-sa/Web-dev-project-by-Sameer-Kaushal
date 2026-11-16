@@ -1,0 +1,5 @@
+# Generative AI use acknowledgement
+
+Generative AI tools were used during preparation of this portfolio and CV to support research into the selected job advert, planning and editing of written content, summarising and explaining supplied project source material, reviewing the assessment requirements, and assisting with HTML/CSS content and presentation updates. AI assistance was also used to prepare the CV draft and an accessible offline copy of the selected employer's programme description.
+
+The project work itself is based on the student's supplied project files, repository material and explanations of their own contributions. AI-generated wording, code changes and summaries were reviewed and edited as part of the portfolio preparation. The student remains responsible for checking the accuracy of all personal details, claims, technical descriptions, links and evidence, and for ensuring that the submitted work reflects their own understanding.

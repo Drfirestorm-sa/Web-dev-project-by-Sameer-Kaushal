@@ -1,252 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Sameer Kaushal — including Fravara AI Smart Glasses, Desktop AI Assistant, Ethical Hacking, and industry placements at Precisely and Oriana Power.">
-    <title>Projects | Sameer Kaushal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Selected computing and product projects by Sameer Kaushal, including a Wordle AI solver, local AI assistant, portfolio website and Fravara product concept." name="description"/>
+<title>Projects | Sameer Kaushal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/portfolio-v14-additions.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Skip to content (Accessibility) -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
-    <!-- Screen reader announcements -->
-    <div id="themeAnnouncement" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader" aria-hidden="true">
-        <div class="loader-spinner"></div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
-                    <span class="brand-mark">SK</span>
+<!-- Skip to content (Accessibility) -->
+<a class="skip-to-content" href="#main-content">Skip to main content</a>
+<!-- Screen reader announcements -->
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="themeAnnouncement"></div>
+<!-- Page Loader -->
+<div aria-hidden="true" class="page-loader" id="pageLoader">
+<div class="loader-spinner"></div>
+</div>
+<!-- Custom Cursor -->
+<div aria-hidden="true" class="cursor-dot" id="cursorDot"></div>
+<div aria-hidden="true" class="cursor-ring" id="cursorRing"></div>
+<!-- Scroll Progress Bar -->
+<div aria-label="Page scroll progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scroll-progress" id="scrollProgress" role="progressbar"></div>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="brand-mark">SK</span>
                     Sameer <span class="text-primary">Kaushal</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Me</a></li>
-                                <li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                                <li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item ms-2">
-                            <button id="themeToggle" class="theme-toggle" title="Toggle dark mode" aria-label="Switch to dark mode">
-                                <i class="fas fa-moon" aria-hidden="true"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-    <section class="page-banner">
-        <h1 class="animate-fade-in-up">My Projects</h1>
-        <p class="animate-fade-in-up delay-100">Selected work from university, industry, and personal learning</p>
-    </section>
-
-    <section class="projects-intro container py-5">
-        <div class="text-center mb-5">
-            <span class="section-eyebrow animate-fade-in-up delay-100">My Work</span>
-            <h2 class="fw-bold mb-3 animate-fade-in-up delay-200">Project Portfolio</h2>
-            <p class="text-muted animate-fade-in-up delay-200">Here are some of the projects and experiences that have shaped my journey as a developer and innovator.</p>
-        </div>
-        <div class="row animate-fade-in-up delay-300" id="projectsGrid">
-            <!-- Fravara -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" id="fravara">
-                <div class="card h-100 project-card">
-                    <img src="images/fravara%20pickaball%203.png" class="card-img-top project-card-img" alt="Fravara Smart Glasses">
-                    <div class="card-body">
-                        <h3 class="card-title">Fravara — AI Smart Glasses</h3>
-                        <p class="card-text">Founder & CEO. Led the design and prototyping of AI-powered smart-glasses for accessibility and learning. Responsible for product vision, system architecture, and UX. Used Python, JavaScript, and C++.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">AI</span>
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-primary">C++</span>
-                            <span class="badge bg-primary">UX</span>
-                        </div>
-                        <a href="fravara-case-study.html" class="btn btn-sm btn-primary">View Case Study</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Desktop AI Assistant -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" id="ai-assistant">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/6c757d/ffffff?text=AI+Assistant" class="card-img-top" alt="Desktop AI Assistant">
-                    <div class="card-body">
-                        <h3 class="card-title">Desktop AI Assistant</h3>
-                        <p class="card-text">Built a voice-controlled productivity automation tool in Python, integrating NLP basics for natural language commands.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-primary">NLP</span>
-                            <span class="badge bg-primary">Automation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- GameBoost Garage -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" id="gameboost">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/6c757d/ffffff?text=GameBoost+Garage" class="card-img-top" alt="GameBoost Garage">
-                    <div class="card-body">
-                        <h3 class="card-title">GameBoost Garage</h3>
-                        <p class="card-text">Concept for a gaming performance optimisation tool. Designed the solution flow from system scan to diagnostic reporting and safe presets. Focused on UX and system diagnostics.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">UX Flow</span>
-                            <span class="badge bg-primary">Diagnostics</span>
-                            <span class="badge bg-primary">Performance</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Ethical Hacking -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" id="ethical-hacking">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/198754/ffffff?text=Ethical+Hacking" class="card-img-top" alt="Ethical Hacking">
-                    <div class="card-body">
-                        <h3 class="card-title">Ethical Hacking (Kali Linux)</h3>
-                        <p class="card-text">Explored penetration testing and network security as part of university coursework. Used Kali Linux tools for vulnerability assessment and ethical hacking exercises.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">Cybersecurity</span>
-                            <span class="badge bg-primary">Kali Linux</span>
-                            <span class="badge bg-primary">Networking</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Precisely Placement -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/dc3545/ffffff?text=Precisely" class="card-img-top" alt="Precisely Placement">
-                    <div class="card-body">
-                        <h3 class="card-title">Precisely — Technical Support Placement</h3>
-                        <p class="card-text">Supported ticket handling using Salesforce and Jira, observed automation tools, and contributed to CSR teamwork. Developed troubleshooting and professional communication skills.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">Salesforce</span>
-                            <span class="badge bg-primary">Jira</span>
-                            <span class="badge bg-primary">Automation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Oriana Power Placement -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/ffc107/000000?text=Oriana+Power" class="card-img-top" alt="Oriana Power">
-                    <div class="card-body">
-                        <h3 class="card-title">Oriana Power — Solar Industry Placement</h3>
-                        <p class="card-text">Assisted with solar surveys, data recording, and performance logging. Supported engineer-management coordination and followed health & safety procedures.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">Data Logging</span>
-                            <span class="badge bg-primary">Teamwork</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Deputy Lead Ambassador -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item">
-                <div class="card h-100 project-card">
-                    <img src="https://placehold.co/600x400/0dcaf0/000000?text=Leadership" class="card-img-top" alt="Leadership">
-                    <div class="card-body">
-                        <h3 class="card-title">Deputy Lead Ambassador / Head Boy Team</h3>
-                        <p class="card-text">Coordinated school initiatives, managed a 20-person team, and organised graduation for 200+ students.</p>
-                        <div class="skill-tags mb-3">
-                            <span class="badge bg-primary">Leadership</span>
-                            <span class="badge bg-primary">Event Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Evidence & Documentation Section -->
-    <section class="evidence-section container py-5 animate-fade-in-up delay-300" id="evidence">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold mb-3">Evidence & Documentation</h2>
-            <p class="text-muted">Visual evidence of my design process, including wireframes, code snippets, and system diagrams.</p>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="evidence-card border rounded p-3 shadow-sm h-100">
-                    <img src="images/fravara%20pickaball%203.png" class="img-fluid rounded mb-3 evidence-card-img" alt="Fravara Wireframe">
-                    <h3 class="fw-bold">Fravara UI Wireframes</h3>
-                    <p class="small text-muted mb-0">Early-stage low-fidelity wireframes for the smart-glasses HUD interface.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="evidence-card border rounded p-3 shadow-sm h-100">
-                    <img src="https://placehold.co/400x300/e9ecef/198754?text=Network+Diagram" class="img-fluid rounded mb-3" alt="Network Diagram">
-                    <h3 class="fw-bold">Security Lab Topology</h3>
-                    <p class="small text-muted mb-0">Network diagram from university ethical hacking labs showing pen-testing methodology.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="evidence-card border rounded p-3 shadow-sm h-100">
-                    <img src="https://placehold.co/400x300/e9ecef/6c757d?text=Code+Snippet" class="img-fluid rounded mb-3" alt="Code Snippet">
-                    <h3 class="fw-bold">AI Assistant Logic</h3>
-                    <p class="small text-muted mb-0">Python snippet showcasing the integration of speech recognition and NLP processing.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h4 class="fw-bold">Sameer Kaushal</h4>
-                    <p class="text-white-50 mb-0">Dundee, UK • <a href="mailto:kaushalsameer731@gmail.com" class="text-white text-decoration-none">kaushalsameer731@gmail.com</a></p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/Drfirestorm-sa" class="me-3" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 pt-3 border-top border-secondary">
-                <div class="col-12 text-center">
-                    <p class="small text-white-50 mb-0">&copy; 2026 Sameer Kaushal. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" title="Toggle navigation" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html">About Me</a></li>
+<li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">Projects</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+<li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
+<li><a class="dropdown-item" href="wordle-ai-case-study.html">Wordle AI Solver</a></li><li><a class="dropdown-item" href="local-ai-case-study.html">Local AI Assistant</a></li><li><a class="dropdown-item" href="portfolio-website-case-study.html">Portfolio Website</a></li><li><a class="dropdown-item" href="fravara-case-study.html">Fravara Case Study</a></li></ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item ms-2">
+<button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+<i aria-hidden="true" class="fas fa-moon"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<section class="page-banner">
+<h1 class="animate-fade-in-up">My Projects</h1>
+<p class="animate-fade-in-up delay-100">Computing projects and product exploration</p>
+</section>
+<section class="projects-intro container py-5">
+<div class="text-center mb-5">
+<span class="section-eyebrow animate-fade-in-up delay-100">My Work</span>
+<h2 class="fw-bold mb-3 animate-fade-in-up delay-200">Project Portfolio</h2>
+<p class="text-muted animate-fade-in-up delay-200">Examples of technical problem-solving, learning and product thinking, with each project’s current status made clear.</p>
+</div>
+<div class="row animate-fade-in-up delay-300" id="projectsGrid"><div class="col-md-6 col-lg-4 mb-4 project-item animate-fade-in-up delay-100" id="wordle-ai"><div class="card h-100 project-card"><div class="project-visual"><i aria-hidden="true" class="fas fa-brain fa-3x"></i></div><div class="card-body"><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-primary">Completed academic project</span></div><h3 class="card-title">Wordle AI Solver</h3><p class="card-text">Developed search-based Wordle agents that rank candidate guesses using entropy, expected remaining candidates and minimax-style heuristics. Implemented duplicate-letter-aware feedback and evaluation/testing code.</p><div class="skill-tags mb-3"><span class="badge bg-primary">Python</span><span class="badge bg-primary">NumPy</span><span class="badge bg-primary">pytest</span></div><a class="btn btn-outline-primary mt-auto" href="wordle-ai-case-study.html">View project details &amp; evidence</a></div></div></div><div class="col-md-6 col-lg-4 mb-4 project-item animate-fade-in-up delay-200" id="local-ai-assistant"><div class="card h-100 project-card"><div class="project-visual"><i aria-hidden="true" class="fas fa-microchip fa-3x"></i></div><div class="card-body"><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-primary">In development</span></div><h3 class="card-title">Local AI Assistant</h3><p class="card-text">Prototyping a local AI-assistant setup with LM Studio, Qwen3.5-4B, OpenClaw, Hermes and Tailscale. Investigated context-window constraints, inference performance and voice-interaction options; several integrations remain exploratory.</p><div class="skill-tags mb-3"><span class="badge bg-primary">LM Studio</span><span class="badge bg-primary">OpenClaw</span><span class="badge bg-primary">Tailscale</span></div><a class="btn btn-outline-primary mt-auto" href="local-ai-case-study.html">View project details &amp; evidence</a></div></div></div><div class="col-md-6 col-lg-4 mb-4 project-item animate-fade-in-up delay-300" id="portfolio-website"><div class="card h-100 project-card"><div class="project-visual"><i aria-hidden="true" class="fas fa-laptop-code fa-3x"></i></div><div class="card-body"><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-primary">Ongoing portfolio</span></div><h3 class="card-title">Personal Portfolio Website</h3><p class="card-text">Built this multi-page portfolio using HTML, CSS, JavaScript and Bootstrap. The original site includes responsive navigation, dark mode, scroll progress, animated page elements and interactive behaviour.</p><div class="skill-tags mb-3"><span class="badge bg-primary">HTML</span><span class="badge bg-primary">CSS</span><span class="badge bg-primary">JavaScript</span></div><a class="btn btn-outline-primary mt-auto" href="portfolio-website-case-study.html">View project details &amp; evidence</a></div></div></div><div class="col-md-6 col-lg-4 mb-4 project-item animate-fade-in-up delay-400" id="fravara"><div class="card h-100 project-card"><div class="project-visual"><i aria-hidden="true" class="fas fa-table-tennis-paddle-ball fa-3x"></i></div><div class="card-body"><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-primary">Concept stage</span></div><h3 class="card-title">Fravara — AI-powered Pickleball Concept</h3><p class="card-text">Founder-led product concept exploring an AI-enabled sports ecosystem focused on pickleball. Current work centres on user needs, problem definition, product scope and brand direction; the project remains at concept stage.</p><div class="skill-tags mb-3"><span class="badge bg-primary">Product thinking</span><span class="badge bg-primary">Research</span><span class="badge bg-primary">AI concept</span></div><a class="btn btn-outline-primary mt-auto" href="fravara-case-study.html">View project details &amp; evidence</a></div></div></div></div>
+</section>
+<!-- Evidence & Documentation Section -->
+<section class="evidence-section container py-5" id="evidence">
+<div class="text-center mb-5"><span class="section-eyebrow">Project artefacts</span><h2 class="fw-bold mb-3">Evidence &amp; Documentation</h2><p class="text-muted">Open the detailed case studies to inspect source excerpts, evaluation data, architecture notes and the original concept artwork. Each item is labelled according to what the supplied material actually proves.</p></div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-3"><div class="evidence-panel"><img alt="Wordle AI solver evaluation results chart" class="evidence-card-img" src="images/evidence/wordle-results.svg"/><h3 class="h5 mt-3">Wordle AI Solver</h3><p class="small text-muted">Reported A/C evaluation results, Python source excerpts and duplicate-letter test cases.</p><a class="evidence-project-link" href="wordle-ai-case-study.html">Inspect evidence <i class="fas fa-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-3"><div class="evidence-panel"><img alt="Local AI architecture illustration based on development notes" class="evidence-card-img" src="images/evidence/local-ai-architecture.svg"/><h3 class="h5 mt-3">Local AI Assistant</h3><p class="small text-muted">Architecture illustration and implementation-status notes. Not a captured runtime screenshot.</p><a class="evidence-project-link" href="local-ai-case-study.html">Inspect evidence <i class="fas fa-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-3"><div class="evidence-panel"><img alt="Portfolio website HTML, CSS and JavaScript source overview" class="evidence-card-img" src="images/evidence/portfolio-source-structure.svg"/><h3 class="h5 mt-3">Portfolio Website</h3><p class="small text-muted">Actual HTML, CSS and JavaScript excerpts for themes, responsive structure and scroll animations.</p><a class="evidence-project-link" href="portfolio-website-case-study.html">Inspect evidence <i class="fas fa-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-3"><div class="evidence-panel"><img alt="Fravara pickleball concept artwork" class="evidence-card-img" src="images/fravara%20pickaball%203.png"/><h3 class="h5 mt-3">Fravara</h3><p class="small text-muted">Original pickleball concept artwork and concept-stage case study; not a working product prototype.</p><a class="evidence-project-link" href="fravara-case-study.html">Inspect concept <i class="fas fa-arrow-right"></i></a></div></div>
+</div></section>
+</main>
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<h4 class="fw-bold">Sameer Kaushal</h4>
+<p class="text-white-50 mb-0">Dundee, UK • <a class="text-white text-decoration-none" href="mailto:kaushalsameer731@gmail.com">kaushalsameer731@gmail.com</a></p>
+</div>
+<div class="col-md-6 text-md-end">
+<div class="social-links">
+<a aria-label="LinkedIn profile (opens in new tab)" class="me-3" href="https://www.linkedin.com/in/sameer-kaushal-041709279/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub profile (opens in new tab)" class="me-3" href="https://github.com/Drfirestorm-sa" rel="noopener noreferrer" target="_blank" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+<div class="row mt-4 pt-3 border-top border-secondary">
+<div class="col-12 text-center">
+<p class="small text-white-50 mb-0">© 2026 Sameer Kaushal. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" id="backToTop" title="Back to top"><i aria-hidden="true" class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

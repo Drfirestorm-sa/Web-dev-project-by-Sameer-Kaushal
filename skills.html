@@ -1,332 +1,201 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skills of Sameer Kaushal — Python, JavaScript, C++, AI, NLP, cybersecurity, UX design, leadership, and more.">
-    <title>Skills | Sameer Kaushal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Technical, business, data and transferable skills of Sameer Kaushal, including Python, web development, SQL, Microsoft Office, Salesforce, Jira and leadership." name="description"/>
+<title>Skills | Sameer Kaushal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/portfolio-v14-additions.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Skip to content (Accessibility) -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
-    <!-- Screen reader announcements -->
-    <div id="themeAnnouncement" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader" aria-hidden="true">
-        <div class="loader-spinner"></div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
-                    <span class="brand-mark">SK</span>
+<!-- Skip to content (Accessibility) -->
+<a class="skip-to-content" href="#main-content">Skip to main content</a>
+<!-- Screen reader announcements -->
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="themeAnnouncement"></div>
+<!-- Page Loader -->
+<div aria-hidden="true" class="page-loader" id="pageLoader">
+<div class="loader-spinner"></div>
+</div>
+<!-- Custom Cursor -->
+<div aria-hidden="true" class="cursor-dot" id="cursorDot"></div>
+<div aria-hidden="true" class="cursor-ring" id="cursorRing"></div>
+<!-- Scroll Progress Bar -->
+<div aria-label="Page scroll progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scroll-progress" id="scrollProgress" role="progressbar"></div>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="brand-mark">SK</span>
                     Sameer <span class="text-primary">Kaushal</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Me</a></li>
-                                <li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                                <li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item ms-2">
-                            <button id="themeToggle" class="theme-toggle" title="Toggle dark mode" aria-label="Switch to dark mode">
-                                <i class="fas fa-moon" aria-hidden="true"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-    <section class="page-banner">
-        <h1 class="animate-fade-in-up">My Skills</h1>
-        <p class="animate-fade-in-up delay-100">Technical, professional, and leadership skills</p>
-    </section>
-
-    <section class="skills-intro container py-5">
-        <div class="text-center mb-5">
-            <span class="section-eyebrow animate-fade-in-up delay-100">What I Work With</span>
-            <h2 class="fw-bold mb-3 animate-fade-in-up delay-200">Technical Skills</h2>
-        </div>
-        <div class="row animate-fade-in-up delay-300">
-            <div class="col-md-4 mb-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-code fa-3x mb-3"></i>
-                        <h3>Programming</h3>
-                        <p>Python, JavaScript, C++</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-brain fa-3x mb-3"></i>
-                        <h3>AI &amp; Data</h3>
-                        <p>NLP, reinforcement learning basics, ML integration</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card skill-card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-tools fa-3x mb-3"></i>
-                        <h3>Tools</h3>
-                        <p>Salesforce, Jira, Automate, Evolv</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Skill Progress Bars -->
-        <div class="text-center mt-5 mb-4">
-            <span class="section-eyebrow animate-fade-in-up delay-300">Expertise Level</span>
-            <h2 class="fw-bold animate-fade-in-up delay-300">Proficiency</h2>
-        </div>
-        <div class="row animate-fade-in-up delay-400">
-            <div class="col-lg-6 mb-4">
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fab fa-python text-primary me-2"></i>Python</span>
-                        <span class="text-muted small">85%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-primary w-85" role="progressbar" title="Python proficiency 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fab fa-js-square text-warning me-2"></i>JavaScript</span>
-                        <span class="text-muted small">75%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-warning w-75-custom" role="progressbar" title="JavaScript proficiency 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fab fa-html5 text-danger me-2"></i>HTML &amp; CSS</span>
-                        <span class="text-muted small">90%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-danger w-90" role="progressbar" title="HTML &amp; CSS proficiency 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fas fa-copyright text-info me-2"></i>C++</span>
-                        <span class="text-muted small">65%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-info w-65" role="progressbar" title="C++ proficiency 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fas fa-brain text-success me-2"></i>AI &amp; NLP</span>
-                        <span class="text-muted small">70%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-success w-70" role="progressbar" title="AI &amp; NLP proficiency 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fas fa-shield-alt text-danger me-2"></i>Cybersecurity</span>
-                        <span class="text-muted small">60%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-danger w-60" role="progressbar" title="Cybersecurity proficiency 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fas fa-pencil-ruler text-primary me-2"></i>UX &amp; Wireframing</span>
-                        <span class="text-muted small">80%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-primary w-80" role="progressbar" title="UX &amp; Wireframing proficiency 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold"><i class="fas fa-database text-secondary me-2"></i>SQL &amp; Databases</span>
-                        <span class="text-muted small">65%</span>
-                    </div>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar bg-secondary w-65" role="progressbar" title="SQL &amp; Databases proficiency 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="mt-5 fw-bold text-center animate-fade-in-up delay-400">Business &amp; UX</h2>
-        <div class="row animate-fade-in-up delay-400">
-            <div class="col-md-6 mb-3">
-                <div class="other-skill-card">
-                    <h3 class="fw-bold"><i class="fas fa-briefcase text-primary me-2"></i>Business Strategy</h3>
-                    <p class="mb-0">Market research, product strategy, and business analysis.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="other-skill-card">
-                    <h3 class="fw-bold"><i class="fas fa-pencil-ruler text-primary me-2"></i>User Experience</h3>
-                    <p class="mb-0">Wireframing, prototyping, and user-centered design.</p>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="mt-5 fw-bold text-center animate-fade-in-up delay-500">Professional</h2>
-        <div class="row animate-fade-in-up delay-500">
-            <div class="col-md-4 mb-3">
-                <div class="other-skill-card text-center">
-                    <i class="fas fa-users fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold">Leadership</h3>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="other-skill-card text-center">
-                    <i class="fas fa-comments fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold">Communication</h3>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="other-skill-card text-center">
-                    <i class="fas fa-handshake fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold">Collaboration</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="certification-section bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold animate-fade-in-up">Achievements</h2>
-            <div class="row animate-fade-in-up delay-100">
-                <div class="col-md-6 mb-4">
-                    <div class="certification-card h-100">
-                        <div class="certification-logo">
-                            <i class="fas fa-medal fa-2x"></i>
-                        </div>
-                        <div class="certification-info">
-                            <h3 class="fw-bold mb-1">Duke of Edinburgh Gold Award</h3>
-                            <div class="certification-date">2025</div>
-                            <p class="mb-0 small text-muted">Demonstrated leadership, resilience, and commitment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="certification-card h-100">
-                        <div class="certification-logo">
-                            <i class="fas fa-award fa-2x"></i>
-                        </div>
-                        <div class="certification-info">
-                            <h3 class="fw-bold mb-1">Ignite Award</h3>
-                            <div class="certification-date">2019–2022</div>
-                            <p class="mb-0 small text-muted">Excellence in personal development and skills.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="certification-card h-100">
-                        <div class="certification-logo">
-                            <i class="fas fa-star fa-2x"></i>
-                        </div>
-                        <div class="certification-info">
-                            <h3 class="fw-bold mb-1">Curriculum Awards</h3>
-                            <div class="certification-date">2023</div>
-                            <p class="mb-0 small text-muted">Outstanding performance in ICT & Geography.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="certification-card h-100">
-                        <div class="certification-logo">
-                            <i class="fas fa-user-tie fa-2x"></i>
-                        </div>
-                        <div class="certification-info">
-                            <h3 class="fw-bold mb-1">House Captain</h3>
-                            <div class="certification-date">2020–2023</div>
-                            <p class="mb-0 small text-muted">Student leadership and team coordination.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 mx-auto">
-                    <div class="certification-card h-100">
-                        <div class="certification-logo">
-                            <i class="fas fa-calculator fa-2x"></i>
-                        </div>
-                        <div class="certification-info">
-                            <h3 class="fw-bold mb-1">Maths Junior Challenger</h3>
-                            <div class="certification-date">2019</div>
-                            <p class="mb-0 small text-muted">Bronze Award winner.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h4 class="fw-bold">Sameer Kaushal</h4>
-                    <p class="text-white-50 mb-0">Dundee, UK • <a href="mailto:kaushalsameer731@gmail.com" class="text-white text-decoration-none">kaushalsameer731@gmail.com</a></p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/Drfirestorm-sa" class="me-3" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 pt-3 border-top border-secondary">
-                <div class="col-12 text-center">
-                    <p class="small text-white-50 mb-0">&copy; 2026 Sameer Kaushal. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" title="Toggle navigation" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html">About Me</a></li>
+<li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Projects</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+<li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
+<li><a class="dropdown-item" href="wordle-ai-case-study.html">Wordle AI Solver</a></li><li><a class="dropdown-item" href="local-ai-case-study.html">Local AI Assistant</a></li><li><a class="dropdown-item" href="portfolio-website-case-study.html">Portfolio Website</a></li><li><a class="dropdown-item" href="fravara-case-study.html">Fravara Case Study</a></li></ul>
+</li>
+<li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item ms-2">
+<button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+<i aria-hidden="true" class="fas fa-moon"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<section class="page-banner">
+<h1 class="animate-fade-in-up">My Skills</h1>
+<p class="animate-fade-in-up delay-100">Technical, business, data and transferable skills</p>
+</section>
+<section class="skills-intro container py-5">
+<div class="text-center mb-5"><span class="section-eyebrow animate-fade-in-up delay-100">What I Work With</span><h2 class="fw-bold mb-3 animate-fade-in-up delay-200">Technical &amp; Business Skills</h2><p class="text-muted animate-fade-in-up delay-200">A current snapshot of tools and areas I have studied or used. Levels describe my own experience rather than test scores.</p></div>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4 animate-fade-in-up delay-100"><div class="card skill-card h-100"><div class="card-body"><i aria-hidden="true" class="fas fa-code fa-2x mb-3 text-primary"></i><h3>Programming &amp; Web</h3><ul class="skill-level-list"><li><strong>Python</strong><span class="badge bg-primary">Intermediate</span></li><li><strong>HTML &amp; CSS</strong><span class="badge bg-primary">Intermediate</span></li><li><strong>Java</strong><span class="badge bg-secondary">First-year study</span></li><li><strong>JavaScript</strong><span class="badge bg-secondary">Beginner</span></li><li><strong>C++</strong><span class="badge bg-secondary">Currently studying</span></li></ul></div></div></div>
+<div class="col-md-6 col-lg-4 mb-4 animate-fade-in-up delay-200"><div class="card skill-card h-100"><div class="card-body"><i aria-hidden="true" class="fas fa-chart-line fa-2x mb-3 text-primary"></i><h3>Business &amp; Data</h3><ul class="skill-level-list"><li><strong>Microsoft Excel</strong><span class="badge bg-secondary">Beginner</span></li><li><strong>SQL</strong><span class="badge bg-secondary">Beginner</span></li><li><strong>Data collection</strong><span class="badge bg-secondary">Work exposure</span></li><li><strong>Process awareness</strong><span class="badge bg-secondary">Work exposure</span></li><li><strong>Market / product thinking</strong><span class="badge bg-secondary">Developing</span></li></ul></div></div></div>
+<div class="col-md-6 col-lg-4 mb-4 animate-fade-in-up delay-300"><div class="card skill-card h-100"><div class="card-body"><i aria-hidden="true" class="fas fa-briefcase fa-2x mb-3 text-primary"></i><h3>Software &amp; Platforms</h3><ul class="skill-level-list"><li><strong>Microsoft Word</strong><span class="badge bg-primary">Used</span></li><li><strong>PowerPoint</strong><span class="badge bg-primary">Used</span></li><li><strong>Salesforce</strong><span class="badge bg-secondary">Placement exposure</span></li><li><strong>Jira</strong><span class="badge bg-secondary">Placement exposure</span></li><li><strong>Git &amp; GitHub</strong><span class="badge bg-secondary">Project use</span></li></ul></div></div></div>
+</div>
+<div class="row animate-fade-in-up delay-400">
+<div class="col-lg-6 mb-4">
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fab fa-python text-primary me-2"></i>Python</span><span class="text-muted small">Intermediate</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-primary w-65" role="presentation"></div></div></div>
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fab fa-html5 text-danger me-2"></i>HTML &amp; CSS</span><span class="text-muted small">Intermediate</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-danger w-65" role="presentation"></div></div></div>
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fab fa-js-square text-warning me-2"></i>JavaScript</span><span class="text-muted small">Beginner</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-warning w-30" role="presentation"></div></div></div>
+</div>
+<div class="col-lg-6 mb-4">
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fas fa-database text-secondary me-2"></i>SQL</span><span class="text-muted small">Beginner</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-secondary w-30" role="presentation"></div></div></div>
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fas fa-laptop-code text-info me-2"></i>C++</span><span class="text-muted small">Currently studying</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-info w-35" role="presentation"></div></div></div>
+<div class="mb-3"><div class="d-flex justify-content-between mb-1"><span class="fw-semibold"><i class="fas fa-file-excel text-success me-2"></i>Microsoft Excel</span><span class="text-muted small">Beginner</span></div><div aria-hidden="true" class="progress progress-sm"><div class="progress-bar bg-secondary w-30" role="presentation"></div></div></div>
+</div>
+</div>
+<div class="text-center mt-5 mb-4 animate-fade-in-up delay-300"><span class="section-eyebrow">Self-assessed levels</span><h2 class="fw-bold">Current proficiency</h2><p class="text-muted">Labels are self-assessed. Bar lengths are visual guides, not measured test scores.</p></div>
+<div class="text-center mt-4 mb-4"><span class="section-eyebrow animate-fade-in-up delay-100">How I Apply Them</span><h2 class="fw-bold animate-fade-in-up delay-200">Transferable Skills &amp; Evidence</h2></div>
+<div class="row">
+<div class="col-md-6 mb-3 animate-fade-in-up delay-100"><div class="other-skill-card h-100"><h3 class="fw-bold"><i aria-hidden="true" class="fas fa-users text-primary me-2"></i>Leadership &amp; Organisation</h3><p class="mb-0">Deputy Lead Ambassador responsibilities, student initiatives and helping coordinate a graduation event for more than 200 students.</p></div></div>
+<div class="col-md-6 mb-3 animate-fade-in-up delay-200"><div class="other-skill-card h-100"><h3 class="fw-bold"><i aria-hidden="true" class="fas fa-comments text-primary me-2"></i>Communication</h3><p class="mb-0">Customer-facing volunteering, workplace exposure and communication with students and staff during leadership activities.</p></div></div>
+<div class="col-md-6 mb-3 animate-fade-in-up delay-300"><div class="other-skill-card h-100"><h3 class="fw-bold"><i aria-hidden="true" class="fas fa-handshake text-primary me-2"></i>Teamwork</h3><p class="mb-0">Working with support engineers during placement experience, coordinating student activities and participating in the Duke of Edinburgh Gold practice expedition.</p></div></div>
+<div class="col-md-6 mb-3 animate-fade-in-up delay-400"><div class="other-skill-card h-100"><h3 class="fw-bold"><i aria-hidden="true" class="fas fa-lightbulb text-primary me-2"></i>Problem-solving &amp; Adaptability</h3><p class="mb-0">Investigating technical issues in coding projects, evaluating algorithm strategies and adapting project direction as requirements become clearer.</p></div></div>
+</div>
+<div class="text-center mt-5 mb-4"><span class="section-eyebrow animate-fade-in-up delay-100">Development Priorities</span><h2 class="fw-bold animate-fade-in-up delay-200">What I’m Working to Improve</h2></div>
+<div class="row">
+<div class="col-md-4 mb-3 animate-fade-in-up delay-100"><div class="interest-card h-100 p-4"><h3 class="fw-bold">Data analysis</h3><p class="mb-0">Build confidence with SQL and develop stronger spreadsheet and analytical workflows.</p></div></div>
+<div class="col-md-4 mb-3 animate-fade-in-up delay-200"><div class="interest-card h-100 p-4"><h3 class="fw-bold">Software development</h3><p class="mb-0">Strengthen C++, data structures, algorithms, testing and code documentation.</p></div></div>
+<div class="col-md-4 mb-3 animate-fade-in-up delay-300"><div class="interest-card h-100 p-4"><h3 class="fw-bold">Business communication</h3><p class="mb-0">Practise translating technical findings into clear explanations and practical recommendations.</p></div></div>
+</div></section>
+<section class="certification-section bg-light py-5">
+<div class="container">
+<h2 class="text-center mb-5 fw-bold animate-fade-in-up">Achievements</h2>
+<div class="row animate-fade-in-up delay-100">
+<div class="col-md-6 mb-4">
+<div class="certification-card h-100">
+<div class="certification-logo">
+<i class="fas fa-medal fa-2x"></i>
+</div>
+<div class="certification-info">
+<h3 class="fw-bold mb-1">Duke of Edinburgh Gold Award</h3>
+<div class="certification-date">2025</div>
+<p class="mb-0 small text-muted">Demonstrated leadership, resilience, and commitment.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="certification-card h-100">
+<div class="certification-logo">
+<i class="fas fa-award fa-2x"></i>
+</div>
+<div class="certification-info">
+<h3 class="fw-bold mb-1">Ignite Academic Excellence Award</h3>
+<div class="certification-date">2019–2022</div>
+<p class="mb-0 small text-muted">Excellence in personal development and skills.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="certification-card h-100">
+<div class="certification-logo">
+<i class="fas fa-star fa-2x"></i>
+</div>
+<div class="certification-info">
+<h3 class="fw-bold mb-1">Curriculum Awards</h3>
+<div class="certification-date">2023</div>
+<p class="mb-0 small text-muted">Outstanding performance in ICT &amp; Geography.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="certification-card h-100">
+<div class="certification-logo">
+<i class="fas fa-user-tie fa-2x"></i>
+</div>
+<div class="certification-info">
+<h3 class="fw-bold mb-1">House Captain</h3>
+<div class="certification-date">2020–2023</div>
+<p class="mb-0 small text-muted">Student leadership and team coordination.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4 mx-auto">
+<div class="certification-card h-100">
+<div class="certification-logo">
+<i class="fas fa-calculator fa-2x"></i>
+</div>
+<div class="certification-info">
+<h3 class="fw-bold mb-1">UKMT Junior Mathematical Challenge</h3>
+<div class="certification-date">2019</div>
+<p class="mb-0 small text-muted">Bronze Award winner.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<h4 class="fw-bold">Sameer Kaushal</h4>
+<p class="text-white-50 mb-0">Dundee, UK • <a class="text-white text-decoration-none" href="mailto:kaushalsameer731@gmail.com">kaushalsameer731@gmail.com</a></p>
+</div>
+<div class="col-md-6 text-md-end">
+<div class="social-links">
+<a aria-label="LinkedIn profile (opens in new tab)" class="me-3" href="https://www.linkedin.com/in/sameer-kaushal-041709279/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub profile (opens in new tab)" class="me-3" href="https://github.com/Drfirestorm-sa" rel="noopener noreferrer" target="_blank" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+<div class="row mt-4 pt-3 border-top border-secondary">
+<div class="col-12 text-center">
+<p class="small text-white-50 mb-0">© 2026 Sameer Kaushal. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" id="backToTop" title="Back to top"><i aria-hidden="true" class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

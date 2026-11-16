@@ -1,230 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Sameer Kaushal — BSc Computer Science (Data Science & AI) student at University of Dundee, founder of Fravara, and aspiring AI engineer.">
-    <title>About Me | Sameer Kaushal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="About Sameer Kaushal, a second-year Computer Science (Data Science &amp; AI) student at the University of Dundee, with ICT, business, project and leadership interests." name="description"/>
+<title>About Me | Sameer Kaushal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/portfolio-v14-additions.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Skip to content (Accessibility) -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
-    <!-- Screen reader announcements -->
-    <div id="themeAnnouncement" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader" aria-hidden="true">
-        <div class="loader-spinner"></div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
-                    <span class="brand-mark">SK</span>
+<!-- Skip to content (Accessibility) -->
+<a class="skip-to-content" href="#main-content">Skip to main content</a>
+<!-- Screen reader announcements -->
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="themeAnnouncement"></div>
+<!-- Page Loader -->
+<div aria-hidden="true" class="page-loader" id="pageLoader">
+<div class="loader-spinner"></div>
+</div>
+<!-- Custom Cursor -->
+<div aria-hidden="true" class="cursor-dot" id="cursorDot"></div>
+<div aria-hidden="true" class="cursor-ring" id="cursorRing"></div>
+<!-- Scroll Progress Bar -->
+<div aria-label="Page scroll progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scroll-progress" id="scrollProgress" role="progressbar"></div>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="brand-mark">SK</span>
                     Sameer <span class="text-primary">Kaushal</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Me</a></li>
-                                <li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                                <li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item ms-2">
-                            <button id="themeToggle" class="theme-toggle" title="Toggle dark mode" aria-label="Switch to dark mode">
-                                <i class="fas fa-moon" aria-hidden="true"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-    <section class="page-banner">
-        <h1 class="animate-fade-in-up">About Me</h1>
-        <p class="animate-fade-in-up delay-100">My journey in tech, learning, and leadership</p>
-    </section>
-
-    <section class="about-content container py-5">
-        <div class="about-section mb-5 animate-fade-in-up delay-200">
-            <div class="row align-items-center">
-                <div class="col-md-5 mb-4 mb-md-0">
-                    <div class="position-relative">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded opacity-10 bg-rotate"></div>
-                        <img src="images/Sameer%20pic%20about%20me.JPG" alt="Sameer Kaushal presenting Fravara" class="img-fluid rounded shadow-lg about-img">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <span class="section-eyebrow">Who I Am</span>
-                    <h2 class="fw-bold mb-3">Profile</h2>
-                    <p class="lead text-muted mb-4">Hi, I’m Sameer Kaushal — a BSc (Hons) Computer Science (Data Science & AI) student and the founder of Fravara.</p>
-                    <p>I'm passionate about building intelligent, human-centred technology focused on accessibility, learning, and everyday productivity. My background in AI and cybersecurity drives me to create systems that are innovative, secure, and practical. During my university studies, I have focused on key modules such as <strong>Data Structures &amp; Algorithms</strong>, <strong>AI Systems</strong>, <strong>Networking</strong>, and <strong>Entrepreneurship</strong>, which have shaped my technical and business mindset.</p>
-                    <p>I founded Fravara as an AI-powered smart-glasses concept to help people interact with information naturally in real time. My design approach focuses on <strong>User-Centric Innovation</strong>, ensuring that complex technology is translated into intuitive experiences. Alongside my studies, I've gained industry exposure through placements at Precisely and Oriana Power, developing hands-on experience in technical support, automation workflows, and professional communication.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section mb-5 animate-fade-in-up delay-300">
-            <span class="section-eyebrow">Academic Journey</span>
-            <h2 class="fw-bold mb-4">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2025–Present</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">BSc (Hons) Computer Science (Data Science & AI)</h3>
-                        <p class="text-primary mb-2">University of Dundee</p>
-                        <p class="mb-0">Developing foundations in networking, databases, entrepreneurship, and AI systems.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2018–2025</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">GCSEs + BTEC Level 3 (IT, Business, Applied Science)</h3>
-                        <p class="text-primary mb-0">Rutlish School, London</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section mb-5 animate-fade-in-up delay-300">
-            <span class="section-eyebrow">Experience</span>
-            <h2 class="fw-bold mb-4">Past Work & Milestones</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">Fravara Prototype & Launch</h3>
-                        <p class="mb-0">Successfully built and demonstrated the first functional prototype of the Fravara AI smart-glasses, focusing on real-time NLP and UX accessibility.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">Technical Placement at Precisely</h3>
-                        <p class="mb-0">Worked with Salesforce and Jira in a technical support role, gaining insight into enterprise-level automation and ticket management.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">University Start & Innovation Focus</h3>
-                        <p class="mb-0">Began BSc Computer Science at Dundee University, achieving top marks in key modules like Networking and Databases.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section mb-5 animate-fade-in-up delay-300" id="reflection">
-            <h2 class="fw-bold mb-4">Reflection & Evaluation</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="interest-card h-100 p-4 border rounded shadow-sm">
-                        <h3 class="fw-bold text-primary mb-3">What went well</h3>
-                        <p class="mb-0">The planning and UI design phase were highly effective. Using Bootstrap allowed for a responsive, clean design that works across all devices, while the modular structure makes it easy to update with new projects. The integration of accessibility features across my projects reflects my core design philosophy.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="interest-card h-100 p-4 border rounded shadow-sm">
-                        <h3 class="fw-bold text-primary mb-3">What I'd improve</h3>
-                        <p class="mb-0">I would like to improve the documentation of my code and add more detailed testing results for the interactive components. I also plan to refine the accessibility features further (ARIA labels, etc.).</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="interest-card h-100 p-4 border rounded shadow-sm">
-                        <h3 class="fw-bold text-primary mb-3">Next steps</h3>
-                        <p class="mb-0">My roadmap includes deploying this portfolio using GitHub Pages, adding a blog section to share my learning journey, and integrating a real-time feedback system for user interaction.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4">Interests & Values</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="interest-card h-100">
-                        <h3 class="fw-bold"><i class="fas fa-glasses me-2 text-primary"></i>Accessible Tech</h3>
-                        <p class="mb-0">Designing solutions that empower everyone to interact with information naturally.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="interest-card h-100">
-                        <h3 class="fw-bold"><i class="fas fa-brain me-2 text-primary"></i>AI & Data Science</h3>
-                        <p class="mb-0">Exploring machine learning, NLP, and real-world AI applications.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="interest-card h-100">
-                        <h3 class="fw-bold"><i class="fas fa-shield-alt me-2 text-primary"></i>Cybersecurity</h3>
-                        <p class="mb-0">Building secure systems and exploring ethical hacking.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="interest-card h-100">
-                        <h3 class="fw-bold"><i class="fas fa-users me-2 text-primary"></i>Leadership & Collaboration</h3>
-                        <p class="mb-0">Leading teams and projects, and supporting others’ growth.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h4 class="fw-bold">Sameer Kaushal</h4>
-                    <p class="text-white-50 mb-0">Dundee, UK • <a href="mailto:kaushalsameer731@gmail.com" class="text-white text-decoration-none">kaushalsameer731@gmail.com</a></p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/Drfirestorm-sa" class="me-3" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 pt-3 border-top border-secondary">
-                <div class="col-12 text-center">
-                    <p class="small text-white-50 mb-0">&copy; 2026 Sameer Kaushal. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" title="Toggle navigation" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html">About Me</a></li>
+<li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Projects</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+<li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
+<li><a class="dropdown-item" href="wordle-ai-case-study.html">Wordle AI Solver</a></li><li><a class="dropdown-item" href="local-ai-case-study.html">Local AI Assistant</a></li><li><a class="dropdown-item" href="portfolio-website-case-study.html">Portfolio Website</a></li><li><a class="dropdown-item" href="fravara-case-study.html">Fravara Case Study</a></li></ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item ms-2">
+<button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+<i aria-hidden="true" class="fas fa-moon"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<section class="page-banner">
+<h1 class="animate-fade-in-up">About Me</h1>
+<p class="animate-fade-in-up delay-100">My journey in tech, learning, and leadership</p>
+</section>
+<section class="about-content container py-5">
+<div class="about-section mb-5 animate-fade-in-up delay-200">
+<div class="row align-items-center">
+<div class="col-md-5 mb-4 mb-md-0">
+<div class="position-relative">
+<div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded opacity-10 bg-rotate"></div>
+<img alt="Sameer Kaushal presenting Fravara" class="img-fluid rounded shadow-lg about-img" src="images/Sameer%20pic%20about%20me.JPG"/>
+</div>
+</div>
+<div class="col-md-7">
+<span class="section-eyebrow">Who I Am</span>
+<h2 class="fw-bold mb-3">Profile</h2>
+<p class="lead text-muted mb-4">Hi, I’m Sameer Kaushal — a second-year BSc (Hons) Computer Science (Data Science &amp; AI) student at the University of Dundee.</p>
+<p>I am interested in the intersection of information technology and business: how systems, data and well-designed digital products can improve processes and decision-making. My work includes programming projects, a developing local AI-assistant setup and a multi-page portfolio website.</p>
+<p>Alongside university, I have gained workplace exposure through technical support experience at Precisely and renewable-energy experience at Oriana Power. I have also developed leadership and event-coordination skills through student ambassador roles.</p>
+</div>
+</div>
+</div>
+<div class="about-section mb-5 animate-fade-in-up delay-300">
+<span class="section-eyebrow">Academic Journey</span>
+<h2 class="fw-bold mb-4">Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-date">2025–Present</div>
+<div class="timeline-content">
+<h3 class="fw-bold">BSc (Hons) Computer Science (Data Science &amp; AI) with Industrial Placement</h3>
+<p class="text-primary mb-2">University of Dundee</p>
+<p class="mb-0">Currently in second year, developing knowledge across computing, data science and AI.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-date">2023–2025</div>
+<div class="timeline-content">
+<h3 class="fw-bold">Pearson Level 3 BTEC National Extended Certificates</h3>
+<p class="text-primary mb-0">RR6 Sixth Form College — Information Technology, Business Studies and Applied Science (DDD)</p>
+</div>
+</div>
+<div class="timeline-item"><div class="timeline-date">2018–2023</div><div class="timeline-content"><h3 class="fw-bold">10 GCSEs</h3><p class="text-primary mb-0">Rutlish School, London</p></div></div></div>
+</div>
+<div class="about-section mb-5 animate-fade-in-up delay-300">
+<div class="experience-overview-card p-4 p-lg-5 rounded-4 border shadow-sm">
+<span class="section-eyebrow">Professional Background</span>
+<h2 class="fw-bold mb-3">Work Experience</h2>
+<p class="mb-4">My workplace placements, volunteering and leadership experience are presented separately from the projects I have built. This makes it easier to see what I have done in professional and team environments.</p>
+<a class="btn btn-primary" href="work-experience.html">View Work Experience <i aria-hidden="true" class="fas fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+<div class="about-section mb-5 animate-fade-in-up delay-300" id="reflection">
+<h2 class="fw-bold mb-4">Reflection &amp; Evaluation</h2>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="interest-card h-100 p-4 border rounded shadow-sm">
+<h3 class="fw-bold text-primary mb-3">What is working well</h3>
+<p class="mb-0">The portfolio’s shared HTML, CSS and JavaScript structure helps keep navigation and presentation consistent across pages. The project pages also make it easier to explain the problem, approach and current status of each piece of work.</p>
+</div>
+</div>
+<div class="col-md-4 mb-4">
+<div class="interest-card h-100 p-4 border rounded shadow-sm">
+<h3 class="fw-bold text-primary mb-3">What I am improving</h3>
+<p class="mb-0">I am working to strengthen testing, document implementation decisions more clearly and distinguish completed features from experiments or ideas that are still under development.</p>
+</div>
+</div>
+<div class="col-md-4 mb-4">
+<div class="interest-card h-100 p-4 border rounded shadow-sm">
+<h3 class="fw-bold text-primary mb-3">Next steps</h3>
+<p class="mb-0">My next priorities are to gather stronger evidence for project outcomes, improve technical documentation and continue developing programming, data and business-analysis skills.</p>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="interest-card h-100 p-4 border rounded shadow-sm">
+<h3 class="fw-bold text-primary mb-3">Users, ethics &amp; responsibility</h3>
+<p class="mb-0">I aim to start with the needs and context of the people who may use a system, rather than assuming that a technical feature is automatically useful. My AI projects have made me consider reliability, privacy, transparency and the risk of over-trusting generated outputs. Responsible development also means considering data protection, consent, accessibility, potential bias, copyright and software licences, and whether a proposed feature could create unintended social impacts. I should use data only for appropriate purposes, respect permissions and be clear about the limits of evidence before presenting a solution as ready for use.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="interest-card h-100 p-4 border rounded shadow-sm">
+<h3 class="fw-bold text-primary mb-3">Future direction</h3>
+<p class="mb-0">I am interested in roles that connect ICT, business analysis and technology consulting. To develop towards these areas, I plan to strengthen SQL and data analysis, practise communicating findings to non-technical audiences, build confidence in requirements gathering and continue improving how I evaluate technical solutions against user and business needs.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="about-section animate-fade-in-up delay-300">
+<h2 class="fw-bold mb-4">Interests &amp; Values</h2>
+<div class="row">
+<div class="col-md-6 mb-4">
+<div class="interest-card h-100">
+<h3 class="fw-bold">ICT &amp; Business</h3>
+<p class="mb-0">Understanding how digital systems, data and technology support business operations and decisions.</p>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="interest-card h-100">
+<h3 class="fw-bold">AI &amp; Data Science</h3>
+<p class="mb-0">Exploring machine learning, search methods and practical applications of AI.</p>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="interest-card h-100">
+<h3 class="fw-bold">Product &amp; User Thinking</h3>
+<p class="mb-0">Considering user needs, defining problems and refining product concepts before committing to implementation.</p>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="interest-card h-100">
+<h3 class="fw-bold">Leadership &amp; Collaboration</h3>
+<p class="mb-0">Coordinating student initiatives, supporting events and working constructively with others.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<h4 class="fw-bold">Sameer Kaushal</h4>
+<p class="text-white-50 mb-0">Dundee, UK • <a class="text-white text-decoration-none" href="mailto:kaushalsameer731@gmail.com">kaushalsameer731@gmail.com</a></p>
+</div>
+<div class="col-md-6 text-md-end">
+<div class="social-links">
+<a aria-label="LinkedIn profile (opens in new tab)" class="me-3" href="https://www.linkedin.com/in/sameer-kaushal-041709279/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub profile (opens in new tab)" class="me-3" href="https://github.com/Drfirestorm-sa" rel="noopener noreferrer" target="_blank" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+<div class="row mt-4 pt-3 border-top border-secondary">
+<div class="col-12 text-center">
+<p class="small text-white-50 mb-0">© 2026 Sameer Kaushal. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" id="backToTop" title="Back to top"><i aria-hidden="true" class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

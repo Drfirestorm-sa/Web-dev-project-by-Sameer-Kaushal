@@ -1,0 +1,32 @@
+/* V14 additions for case-study evidence and the dedicated work-experience page. The original style.css and script.js remain in place. */
+.experience-entry{background:var(--card-bg);border-color:var(--border-color)!important;color:var(--text-primary);transition:transform var(--transition-base),box-shadow var(--transition-base),border-color var(--transition-base)}
+.experience-entry:hover{transform:translateY(-4px);box-shadow:var(--card-shadow-hover)!important;border-color:var(--primary)!important}
+.experience-points{color:var(--text-secondary);padding-left:1.2rem;font-size:.92rem}
+.experience-points li{margin-bottom:.5rem}
+.experience-points li:last-child{margin-bottom:0}
+.experience-overview-card{background:var(--card-bg);border-color:var(--border-color)!important}
+body.dark-mode .experience-entry,body.dark-mode .experience-overview-card{background:var(--card-bg);border-color:var(--border-color)!important;color:var(--text-primary)}
+body.dark-mode .experience-points{color:var(--text-secondary)}
+.evidence-code-wrap{background:#101b2b;border:1px solid #33445b;border-radius:14px;overflow:hidden;margin:1rem 0 1.5rem}
+.evidence-code-head{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.65rem 1rem;color:#cbd5e1;background:#17263a;border-bottom:1px solid #33445b;font-size:.82rem}
+.evidence-code{margin:0;padding:1.15rem;color:#e2e8f0;font:.82rem/1.65 var(--font-mono);white-space:pre;overflow-x:auto;tab-size:4}
+.evidence-code code{color:inherit}
+.evidence-note{border-left:4px solid var(--primary);background:var(--bg-secondary);color:var(--text-secondary);padding:1rem 1.1rem;border-radius:0 var(--radius-md) var(--radius-md) 0}
+.evidence-panel{height:100%;border:1px solid var(--border-color);background:var(--card-bg);border-radius:var(--radius-lg);padding:1.25rem;box-shadow:var(--card-shadow)}
+.evidence-panel img{width:100%;height:auto;border-radius:12px;border:1px solid var(--border-color)}
+.evidence-meta{color:var(--text-muted);font-size:.84rem}
+.case-study-hero{padding:2rem;border:1px solid var(--border-color);border-radius:var(--radius-xl);background:var(--bg-secondary)}
+.case-study-hero .lead{color:var(--text-secondary)}
+.metric-card{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:1rem;height:100%}
+.metric-value{font:700 1.8rem/1.1 var(--font-display);color:var(--primary)}
+.project-step{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1rem}
+.project-step-number{width:2rem;height:2rem;flex:0 0 2rem;display:grid;place-items:center;border-radius:50%;background:var(--primary-glow);color:var(--primary);font-weight:700}
+.case-study-table{color:var(--text-primary)}
+.case-study-table th{color:var(--text-primary);white-space:nowrap}
+.case-study-table td{color:var(--text-secondary)}
+.evidence-card .evidence-card-img{object-fit:contain;max-height:210px;background:#0f1b2e;padding:.4rem}
+.evidence-project-link{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none}
+.evidence-project-link:hover{text-decoration:underline}
+.project-card .card-body{display:flex;flex-direction:column;align-items:flex-start}
+.project-card .card-body .skill-tags{margin-top:auto}
+@media(prefers-reduced-motion:reduce){.experience-entry:hover{transform:none}}

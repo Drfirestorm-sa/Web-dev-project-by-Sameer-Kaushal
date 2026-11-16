@@ -1,388 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fravara — Case Study of AI-Powered Smart Glasses for Accessibility and Learning by Sameer Kaushal">
-    <title>Fravara Case Study | Sameer Kaushal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Fravara case study: an early-stage AI-enabled pickleball product concept by Sameer Kaushal, focusing on users, problem definition, product scope and next steps." name="description"/>
+<title>Fravara Case Study | Sameer Kaushal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/portfolio-v14-additions.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Skip to content (Accessibility) -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
-    <!-- Screen reader announcements -->
-    <div id="themeAnnouncement" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader" aria-hidden="true">
-        <div class="loader-spinner"></div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
-                    <span class="brand-mark">SK</span>
+<!-- Skip to content (Accessibility) -->
+<a class="skip-to-content" href="#main-content">Skip to main content</a>
+<!-- Screen reader announcements -->
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="themeAnnouncement"></div>
+<!-- Page Loader -->
+<div aria-hidden="true" class="page-loader" id="pageLoader">
+<div class="loader-spinner"></div>
+</div>
+<!-- Custom Cursor -->
+<div aria-hidden="true" class="cursor-dot" id="cursorDot"></div>
+<div aria-hidden="true" class="cursor-ring" id="cursorRing"></div>
+<!-- Scroll Progress Bar -->
+<div aria-label="Page scroll progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scroll-progress" id="scrollProgress" role="progressbar"></div>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="brand-mark">SK</span>
                     Sameer <span class="text-primary">Kaushal</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Me</a></li>
-                                <li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                                <li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item ms-2">
-                            <button id="themeToggle" class="theme-toggle" title="Toggle dark mode" aria-label="Switch to dark mode">
-                                <i class="fas fa-moon" aria-hidden="true"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-    <section class="page-banner">
-        <h1 class="animate-fade-in-up">Fravara — AI Smart Glasses</h1>
-        <p class="animate-fade-in-up delay-100">Case Study: Designing the Future of Accessible Technology</p>
-    </section>
-
-    <div class="container py-5">
-
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" class="mb-4">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Fravara Case Study</li>
-            </ol>
-        </nav>
-
-        <!-- Overview -->
-        <section class="mb-5 animate-fade-in-up delay-200">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="images/fravara%20pickaball%203.png" alt="Fravara Smart Glasses Prototype" class="img-fluid rounded shadow-lg w-100">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-3">Project Overview</h2>
-                    <p class="lead">Fravara is an AI-powered smart-glasses concept designed to help people interact with information naturally in real time — built with accessibility and learning at its core.</p>
-                    <p>As founder and CEO, I led every aspect: product vision, system architecture, UX research, and prototype development.</p>
-                    <div class="mt-4">
-                        <dl class="row mb-0">
-                            <dt class="col-sm-4">Role</dt>
-                            <dd class="col-sm-8">Founder &amp; CEO, Lead Designer</dd>
-                            <dt class="col-sm-4">Timeline</dt>
-                            <dd class="col-sm-8">2025 — Present</dd>
-                            <dt class="col-sm-4">Tech Stack</dt>
-                            <dd class="col-sm-8">Python, JavaScript, C++, NLP</dd>
-                            <dt class="col-sm-4">Team</dt>
-                            <dd class="col-sm-8">Solo founder, mentor collaboration</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Problem -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-exclamation-circle text-danger me-2"></i>The Problem</h2>
-            <div class="row">
-                <div class="col-lg-8">
-                    <p>People face barriers that existing devices don't solve well:</p>
-                    <ul class="list-group list-group-flush mb-4">
-                        <li class="list-group-item"><strong>Context Switching Fatigue</strong> — constantly jumping between phones, laptops, and notes.</li>
-                        <li class="list-group-item"><strong>Accessibility Barriers</strong> — most devices aren't built for users with motor or visual impairments.</li>
-                        <li class="list-group-item"><strong>Information Overload</strong> — no intelligent filtering means users drown in irrelevant data.</li>
-                        <li class="list-group-item"><strong>Learning Disconnection</strong> — remote education lacks natural interaction cues and real-time support.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="alert alert-warning rounded p-4">
-                        <h3 class="fw-bold"><i class="fas fa-chart-bar me-2"></i>Market Insight</h3>
-                        <p class="mb-0 small">The global AR/VR market is projected to reach <strong>$297 billion by 2028</strong>, yet accessibility features remain severely underdeveloped.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Solution -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-lightbulb text-success me-2"></i>The Solution</h2>
-            <p class="lead mb-4">Fravara is a wearable AI system that acts as a natural, intelligent interface to the world around you.</p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-primary solution-card">
-                        <div class="card-header bg-primary text-white fw-bold">
-                            <i class="fas fa-brain me-2"></i>AI-Powered NLP
-                        </div>
-                        <div class="card-body">
-                            <p>Real-time natural language understanding via voice and gesture commands.</p>
-                            <ul class="small mb-0"><li>Real-time transcription</li><li>Intent recognition</li><li>Context awareness</li></ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-primary solution-card">
-                        <div class="card-header bg-primary text-white fw-bold">
-                            <i class="fas fa-universal-access me-2"></i>Accessibility First
-                        </div>
-                        <div class="card-body">
-                            <p>Designed from the ground up for inclusive, hands-free interaction.</p>
-                            <ul class="small mb-0"><li>Hands-free navigation</li><li>Voice-only mode</li><li>Customisable UI density</li></ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-primary solution-card">
-                        <div class="card-header bg-primary text-white fw-bold">
-                            <i class="fas fa-graduation-cap me-2"></i>Learning Enhancement
-                        </div>
-                        <div class="card-body">
-                            <p>Real-time visual annotations, summarisation, and spaced repetition prompts.</p>
-                            <ul class="small mb-0"><li>Text-to-speech explanations</li><li>Visual highlighting</li><li>Quiz mode integration</li></ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-primary solution-card">
-                        <div class="card-header bg-primary text-white fw-bold">
-                            <i class="fas fa-shield-alt me-2"></i>Privacy by Design
-                        </div>
-                        <div class="card-body">
-                            <p>On-device processing and encrypted handling protect every user.</p>
-                            <ul class="small mb-0"><li>Local processing (no cloud required)</li><li>User-controlled data</li><li>GDPR compliant</li></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Design Process -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-pencil-ruler text-info me-2"></i>Design Process</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 1</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">User Research &amp; Ideation</h3>
-                        <p class="mb-0">Conducted interviews with students, educators, and accessibility advocates. Identified key pain points and brainstormed 15+ prototype directions using design thinking methodology.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 2</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">Lo-Fi Wireframing</h3>
-                        <p class="mb-0">Created low-fidelity wireframes of the HUD (Heads-Up Display) showing key interactions. Tested with 8 users from diverse backgrounds and iterated rapidly.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 3</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">Hi-Fi Prototyping</h3>
-                        <p class="mb-0">Built a functional prototype with a JavaScript frontend and Python NLP backend. Integrated real-time gesture recognition (C++ / OpenCV).</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 4</div>
-                    <div class="timeline-content">
-                        <h3 class="fw-bold">Usability Testing</h3>
-                        <p class="mb-0">Ran 5 rounds of iterative usability testing with accessibility-focused user groups, achieving a 95% task completion rate in the final round.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Results -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-chart-line text-success me-2"></i>Results &amp; Impact</h2>
-            <div class="row mb-4">
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="stat-card">
-                        <h3 class="fw-bold text-primary mb-1">8</h3>
-                        <p class="small text-muted mb-0">Users Tested (3 with disabilities)</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="stat-card">
-                        <h3 class="fw-bold text-primary mb-1">95%</h3>
-                        <p class="small text-muted mb-0">Task Completion Rate</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="stat-card">
-                        <h3 class="fw-bold text-primary mb-1">4.2/5</h3>
-                        <p class="small text-muted mb-0">Average Satisfaction Score</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="stat-card">
-                        <h3 class="fw-bold text-primary mb-1">5 Rounds</h3>
-                        <p class="small text-muted mb-0">Usability Testing Iterations</p>
-                    </div>
-                </div>
-            </div>
-            <blockquote class="blockquote alert alert-success p-4 rounded">
-                <p>"Fravara made it so much easier to stay engaged in my studies. The voice commands mean I don't have to type, and the visual annotations help me understand complex concepts faster."</p>
-                <footer class="blockquote-footer mt-2">Test User with Motor Disability</footer>
-            </blockquote>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Tech Stack -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-code me-2"></i>Technical Implementation</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h3 class="fw-bold mb-3">Backend Architecture</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>NLP Engine:</strong> Python (spaCy, NLTK)</li>
-                        <li class="list-group-item"><strong>Voice Processing:</strong> Python (librosa, SpeechRecognition)</li>
-                        <li class="list-group-item"><strong>Data Storage:</strong> SQLite — local, optional cloud sync</li>
-                        <li class="list-group-item"><strong>API Integration:</strong> REST API for external services</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <h3 class="fw-bold mb-3">Frontend &amp; Hardware</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>UI Framework:</strong> JavaScript (Vue.js)</li>
-                        <li class="list-group-item"><strong>Gesture Recognition:</strong> C++ (OpenCV)</li>
-                        <li class="list-group-item"><strong>Display:</strong> AR-enabled lens simulation</li>
-                        <li class="list-group-item"><strong>Microcontroller:</strong> Arduino-compatible prototype</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Lessons Learned -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-book me-2"></i>Lessons Learned</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card p-4 h-100 shadow-sm">
-                        <h3 class="fw-bold mb-2">Accessibility Requires Iteration</h3>
-                        <p class="small mb-0">Our first prototype was too visually complex. Testing revealed that simplicity and voice-first design are non-negotiable for true accessibility.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card p-4 h-100 shadow-sm">
-                        <h3 class="fw-bold mb-2">User Input is Gold</h3>
-                        <p class="small mb-0">A wheelchair-using student suggested the gesture recognition feature that became one of our core differentiators — no theorising would have found that.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card p-4 h-100 shadow-sm">
-                        <h3 class="fw-bold mb-2">Privacy Concerns Matter</h3>
-                        <p class="small mb-0">Users were hesitant about wearable cameras. On-device processing and clear privacy controls dramatically increased trust and adoption intent.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Next Steps -->
-        <section class="mb-5 animate-fade-in-up delay-300">
-            <h2 class="fw-bold mb-4"><i class="fas fa-rocket me-2"></i>Roadmap &amp; Vision</h2>
-            <div class="row">
-                <div class="col-lg-8 mb-4">
-                    <ul class="list-unstyled mb-0">
-                        <li class="next-step-li"><strong>Q2 2026</strong> — Beta release with 50 early-access users</li>
-                        <li class="next-step-li"><strong>Q3 2026</strong> — Integration with Coursera &amp; Udemy</li>
-                        <li class="next-step-li"><strong>Q4 2026</strong> — Hardware partnership for production prototype</li>
-                        <li class="next-step-li"><strong>2027</strong> — Launch neurodivergent-focused accessibility features</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="alert alert-info p-4">
-                        <h3 class="fw-bold mb-2"><i class="fas fa-handshake me-2"></i>Looking For:</h3>
-                        <ul class="mb-0 small">
-                            <li>Hardware engineers (AR/VR)</li>
-                            <li>Accessibility consultants</li>
-                            <li>Beta testers with diverse needs</li>
-                            <li>Mentors &amp; investors</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="py-5 text-center bg-light rounded p-5 animate-fade-in-up delay-300">
-            <h3 class="fw-bold mb-3">Interested in Fravara?</h3>
-            <p class="lead mb-4">Whether you're a potential user, collaborator, or investor — I'd love to hear from you.</p>
-            <a href="contact.html" class="btn btn-primary btn-lg shadow-sm me-3 mb-2">Get in Touch</a>
-            <a href="projects.html" class="btn btn-outline-primary btn-lg mb-2">Back to Projects</a>
-        </section>
-
-    </div>
-    </main>
-
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h4 class="fw-bold">Sameer Kaushal</h4>
-                    <p class="text-white-50 mb-0">Dundee, UK &bull; <a href="mailto:kaushalsameer731@gmail.com" class="text-white text-decoration-none">kaushalsameer731@gmail.com</a></p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sameer-kaushal-041709279/" class="me-3" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn profile (opens in new tab)"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/Drfirestorm-sa" class="me-3" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub profile (opens in new tab)"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 pt-3 border-top border-secondary">
-                <div class="col-12 text-center">
-                    <p class="small text-white-50 mb-0">&copy; 2026 Sameer Kaushal. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" title="Toggle navigation" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html">About Me</a></li>
+<li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">Projects</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+<li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li>
+<li><a class="dropdown-item" href="wordle-ai-case-study.html">Wordle AI Solver</a></li><li><a class="dropdown-item" href="local-ai-case-study.html">Local AI Assistant</a></li><li><a class="dropdown-item" href="portfolio-website-case-study.html">Portfolio Website</a></li><li><a class="dropdown-item" href="fravara-case-study.html">Fravara Case Study</a></li></ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item ms-2">
+<button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+<i aria-hidden="true" class="fas fa-moon"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content"><section class="page-banner"><h1 class="animate-fade-in-up">Fravara: AI-powered pickleball concept</h1><p class="animate-fade-in-up delay-100">Case study · early-stage product exploration</p></section><div class="container py-5">
+<nav aria-label="breadcrumb" class="mb-4"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+<li aria-current="page" class="breadcrumb-item active">Fravara: AI-powered pickleball concept</li>
+</ol></nav>
+<section class="case-study-hero mb-5 animate-fade-in-up">
+<div class="row align-items-center g-4">
+<div class="col-lg-8"><span class="section-eyebrow">Concept stage · product direction under exploration</span>
+<h2 class="fw-bold mb-3">Exploring a focused sports-technology concept around pickleball</h2><p class="lead">Fravara is an early-stage idea for an AI-enabled sports ecosystem focused on pickleball. The direction evolved from an earlier smart-glasses concept. The current priority is to understand the sport, identify a real user problem and decide whether an AI-enabled solution would add value.</p>
+<div class="skill-tags"><span class="badge bg-primary">Product thinking</span><span class="badge bg-primary">User needs</span><span class="badge bg-primary">Concept development</span><span class="badge bg-primary">AI exploration</span></div></div>
+<div class="col-lg-4"><div class="metric-card"><div class="metric-value">Concept</div><div class="evidence-meta">No completed product prototype or validated user outcomes are claimed.</div></div></div>
+</div></section>
+<section class="mb-5">
+<div class="row g-3">
+<div class="col-lg-7"><div class="metric-card h-100">
+<h2 class="h4 fw-bold mb-3">My contribution</h2>
+<ul class="mb-0">
+<li>Led the change in direction from the earlier wearable idea to a pickleball-focused concept.</li>
+<li>Developed the current Fravara visual identity asset.</li>
+<li>Started narrowing the concept around a specific sport and its potential user needs.</li>
+<li>Identified user understanding and problem validation as priorities before committing to features or implementation.</li>
+</ul>
+</div></div>
+<div class="col-lg-5"><div class="metric-card h-100">
+<h2 class="h4 fw-bold mb-3">Project focus</h2>
+<p>Explore whether a useful AI-enabled experience could support people involved in pickleball.</p>
+<p class="mb-0"><strong>Current stage:</strong> problem exploration and product scoping, not a finished application.</p>
+</div></div>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h4 fw-bold mb-3">Concept visual</h2>
+<div class="evidence-panel">
+<img alt="Fravara pickleball concept visual" src="images/fravara pickaball 3.png"/>
+<p class="evidence-meta mt-2 mb-0">Original concept artwork included in the supplied portfolio files.</p>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h4 fw-bold mb-3">A challenge and what I learned</h2>
+<div class="metric-card">
+<p>The main challenge is avoiding a technology-first approach. Before deciding which AI features to build, I need to understand who the users are, what problem they have and whether AI is an appropriate solution.</p>
+<p class="mb-0">This work is developing my product thinking, prioritisation and ability to communicate a concept's current maturity honestly.</p>
+</div>
+</section>
+<section class="mb-4">
+<h2 class="h4 fw-bold mb-3">Next steps</h2>
+<ol class="mb-0">
+<li>Define the intended user groups and a clear problem statement.</li>
+<li>Gather feedback from pickleball participants.</li>
+<li>Prioritise one use case and sketch the user journey.</li>
+<li>Only then assess the technical approach and build a small prototype.</li>
+</ol>
+</section>
+<div class="d-flex flex-wrap gap-2 mt-4"><a class="btn btn-primary" href="projects.html">Back to all projects</a><a class="btn btn-outline-primary" href="work-experience.html">View work experience</a></div>
+</div></main>
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<h4 class="fw-bold">Sameer Kaushal</h4>
+<p class="text-white-50 mb-0">Dundee, UK • <a class="text-white text-decoration-none" href="mailto:kaushalsameer731@gmail.com">kaushalsameer731@gmail.com</a></p>
+</div>
+<div class="col-md-6 text-md-end">
+<div class="social-links">
+<a aria-label="LinkedIn profile (opens in new tab)" class="me-3" href="https://www.linkedin.com/in/sameer-kaushal-041709279/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub profile (opens in new tab)" class="me-3" href="https://github.com/Drfirestorm-sa" rel="noopener noreferrer" target="_blank" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+<div class="row mt-4 pt-3 border-top border-secondary">
+<div class="col-12 text-center">
+<p class="small text-white-50 mb-0">© 2026 Sameer Kaushal. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" id="backToTop" title="Back to top"><i aria-hidden="true" class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

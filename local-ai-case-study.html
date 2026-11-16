@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Development case study for a locally hosted AI assistant using LM Studio, OpenClaw, Hermes and Tailscale." name="description"/>
+<title>Local AI Assistant Case Study | Sameer Kaushal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/portfolio-v14-additions.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Skip to content (Accessibility) -->
+<a class="skip-to-content" href="#main-content">Skip to main content</a>
+<!-- Screen reader announcements -->
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="themeAnnouncement"></div>
+<!-- Page Loader -->
+<div aria-hidden="true" class="page-loader" id="pageLoader">
+<div class="loader-spinner"></div>
+</div>
+<!-- Custom Cursor -->
+<div aria-hidden="true" class="cursor-dot" id="cursorDot"></div>
+<div aria-hidden="true" class="cursor-ring" id="cursorRing"></div>
+<!-- Scroll Progress Bar -->
+<div aria-label="Page scroll progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scroll-progress" id="scrollProgress" role="progressbar"></div>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="brand-mark">SK</span>
+                    Sameer <span class="text-primary">Kaushal</span>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" title="Toggle navigation" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html">About Me</a></li>
+<li><a class="dropdown-item" href="about.html#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="dropdown-toggle nav-link active" data-bs-toggle="dropdown" href="#" role="button">Projects</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="projects.html">All Projects</a></li>
+<li><a class="dropdown-item" href="projects.html#evidence">Evidence</a></li><li><a class="dropdown-item" href="wordle-ai-case-study.html">Wordle AI Solver</a></li><li><a class="dropdown-item" href="local-ai-case-study.html">Local AI Assistant</a></li><li><a class="dropdown-item" href="portfolio-website-case-study.html">Portfolio Website</a></li><li><a class="dropdown-item" href="fravara-case-study.html">Fravara Case Study</a></li></ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item ms-2">
+<button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+<i aria-hidden="true" class="fas fa-moon"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content"><section class="page-banner"><h1 class="animate-fade-in-up">Local AI Assistant</h1><p class="animate-fade-in-up delay-100">Case study · local inference and agent integration</p></section><div class="container py-5">
+<nav aria-label="breadcrumb" class="mb-4"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+<li aria-current="page" class="breadcrumb-item active">Local AI Assistant</li>
+</ol></nav>
+<section class="case-study-hero mb-5 animate-fade-in-up">
+<div class="row align-items-center g-4">
+<div class="col-lg-8"><span class="section-eyebrow">In development · personal infrastructure project</span>
+<h2 class="fw-bold mb-3">Exploring a local assistant across two personal computers</h2><p class="lead">I have been setting up a local AI assistant that separates the gateway from the machine running the language model. The work has focused on connecting the components, understanding model requirements and testing what the available hardware can support.</p>
+<div class="skill-tags"><span class="badge bg-primary">LM Studio</span><span class="badge bg-primary">Qwen3.5-4B</span><span class="badge bg-primary">OpenClaw</span><span class="badge bg-primary">Hermes</span><span class="badge bg-primary">Tailscale</span></div></div>
+<div class="col-lg-4"><div class="metric-card"><div class="metric-value">2-device</div><div class="evidence-meta">Recorded setup: a Windows gateway PC and an ASUS V16 laptop for local inference.</div></div></div>
+</div></section>
+<section class="mb-5">
+<div class="row g-3">
+<div class="col-lg-7"><div class="metric-card h-100">
+<h2 class="h4 fw-bold mb-3">My contribution</h2>
+<ul class="mb-0">
+<li>Set up LM Studio to serve the Qwen3.5-4B model on the ASUS V16 laptop.</li>
+<li>Used an older Windows 11 PC as the OpenClaw gateway host.</li>
+<li>Worked on connecting the two machines over Tailscale and integrating the Hermes agent.</li>
+<li>Investigated context-window requirements, local inference speed and possible voice-input components.</li>
+</ul>
+</div></div>
+<div class="col-lg-5"><div class="metric-card h-100">
+<h2 class="h4 fw-bold mb-3">Technologies and setup</h2>
+<div class="skill-tags mb-3"><span class="badge bg-primary">LM Studio</span><span class="badge bg-primary">Qwen3.5-4B</span><span class="badge bg-primary">OpenClaw</span><span class="badge bg-primary">Hermes</span><span class="badge bg-primary">Tailscale</span></div>
+<p class="mb-0">The gateway PC was recorded as Windows 11, Intel Core i5-7200U and 24 GB RAM. The ASUS V16 handled local model inference.</p>
+</div></div>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h4 fw-bold mb-3">Architecture at a glance</h2>
+<div class="evidence-panel">
+<img alt="Illustration of the local AI assistant architecture showing the gateway PC and model laptop connected through Tailscale" src="images/evidence/local-ai-architecture.svg"/>
+<p class="evidence-meta mt-2 mb-0">Reconstructed from setup notes. This is an explanatory diagram, not a screenshot of a running system.</p>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h4 fw-bold mb-3">A challenge I addressed</h2>
+<div class="metric-card">
+<p>The Hermes agent reported that the model's initial 8,192-token context window was below its stated 64,000-token minimum. I later set the LM Studio context to 64,000 tokens to meet that requirement.</p>
+<p class="mb-0">This did not solve a separate limitation: local inference was still slow. It taught me to distinguish configuration compatibility from performance.</p>
+</div>
+</section>
+<section class="mb-4">
+<h2 class="h4 fw-bold mb-3">Current status and learning</h2>
+<p>The gateway, local model serving and device connectivity have been part of the recorded setup. Faster-Whisper and Pipecat have been explored for voice interaction, but a complete, repeatable voice pipeline is not yet evidenced as finished.</p>
+<p class="mb-2">This work has developed my understanding of local model deployment, networked components, integration constraints and practical performance trade-offs.</p>
+<a class="btn btn-outline-primary btn-sm" download="" href="evidence/local-ai/architecture-notes.md">View configuration and status notes</a>
+</section>
+<div class="d-flex flex-wrap gap-2 mt-4"><a class="btn btn-primary" href="projects.html">Back to all projects</a><a class="btn btn-outline-primary" href="work-experience.html">View work experience</a></div>
+</div></main>
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<h4 class="fw-bold">Sameer Kaushal</h4>
+<p class="text-white-50 mb-0">Dundee, UK • <a class="text-white text-decoration-none" href="mailto:kaushalsameer731@gmail.com">kaushalsameer731@gmail.com</a></p>
+</div>
+<div class="col-md-6 text-md-end">
+<div class="social-links">
+<a aria-label="LinkedIn profile (opens in new tab)" class="me-3" href="https://www.linkedin.com/in/sameer-kaushal-041709279/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub profile (opens in new tab)" class="me-3" href="https://github.com/Drfirestorm-sa" rel="noopener noreferrer" target="_blank" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+<div class="row mt-4 pt-3 border-top border-secondary">
+<div class="col-12 text-center">
+<p class="small text-white-50 mb-0">© 2026 Sameer Kaushal. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" id="backToTop" title="Back to top"><i aria-hidden="true" class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
