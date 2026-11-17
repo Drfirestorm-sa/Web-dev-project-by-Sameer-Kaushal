@@ -372,9 +372,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typingElement) {
         const phrases = [
             'Computer Science (Data Science & AI) Student',
-            'Founder of Fravara',
-            'AI & Accessibility Enthusiast',
-            'Building the Future of Tech'
+            'Interested in Business & Technology Consulting',
+            'Exploring AI, Data & Digital Solutions',
+            'Building Practical, User-Focused Technology'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
