@@ -22,7 +22,7 @@ Extract the ZIP and open `index.html` in a modern browser. Internet access is ne
 Work placements and volunteering are kept on the dedicated Work Experience page. The Projects page is reserved for work built or developed: Wordle AI Solver, Local AI Assistant, the portfolio website and Fravara.
 
 ## Original visual behaviour retained
-V11 is rebuilt on the original website's HTML structure and stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
+The current V14 release builds on the original website's HTML structure and shared stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
 
 ## Project status
 - Wordle AI Solver: completed academic project; source code exists in a private repository.

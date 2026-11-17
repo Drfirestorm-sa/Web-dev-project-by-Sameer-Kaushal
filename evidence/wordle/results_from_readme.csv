@@ -1,0 +1,6 @@
+agent,win_rate,average_guesses,dataset,source_note
+Search - entropy,100%,3.672,Dataset A (2309 answers),"Reported in private project README; transcribed for portfolio, not independently rerun"
+Search - expected size,100%,3.705,Dataset A (2309 answers),"Reported in private project README; transcribed for portfolio, not independently rerun"
+Search - minimax,100%,3.803,Dataset A (2309 answers),"Reported in private project README; transcribed for portfolio, not independently rerun"
+Random candidate baseline,98.57%,4.049,Dataset A (2309 answers),"Reported in private project README; transcribed for portfolio, not independently rerun"
+Alphabetical candidate baseline,97.57%,4.316,Dataset A (2309 answers),"Reported in private project README; transcribed for portfolio, not independently rerun"
