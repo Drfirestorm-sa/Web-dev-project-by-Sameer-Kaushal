@@ -70,7 +70,7 @@ body.dark-mode {
     --bg-tertiary: #1f2937;
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
-    --text-muted: #64748b;
+    --text-muted: #9aabc2;
     --border-color: #1e293b;
     --card-bg: #111827;
     --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -1860,7 +1860,7 @@ body.dark-mode .text-info {
 }
 
 body.dark-mode .text-secondary {
-    color: var(--text-muted) !important;
+    color: var(--text-secondary) !important;
 }
 
 body.dark-mode .progress {
@@ -2155,7 +2155,7 @@ body.dark-mode .btn-close {
         --bg-tertiary: #1f2937;
         --text-primary: #f1f5f9;
         --text-secondary: #cbd5e1;
-        --text-muted: #64748b;
+        --text-muted: #9aabc2;
         --border-color: #1e293b;
         --card-bg: #111827;
         --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -2177,3 +2177,90 @@ body.dark-mode .btn-close {
         color: black;
     }
 }
+
+/* ===== DARK MODE — ACCESSIBLE TYPOGRAPHY HIERARCHY =====
+   Keep secondary copy readable; reserve muted text for metadata only. */
+body.dark-mode {
+    --text-primary: #f1f5f9;
+    --text-secondary: #d1d9e6;
+    --text-muted: #9aabc2;
+}
+
+body.dark-mode .text-secondary,
+body.dark-mode .text-body-secondary {
+    color: var(--text-secondary) !important;
+}
+
+body.dark-mode .text-muted,
+body.dark-mode .form-text,
+body.dark-mode .breadcrumb-item.active {
+    color: var(--text-muted) !important;
+}
+
+body.dark-mode .text-white-50 {
+    color: rgba(226, 232, 240, 0.78) !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .nav-link.active,
+body.dark-mode .navbar .nav-link[aria-current="page"] {
+    color: #8ab4ff !important;
+}
+
+body.dark-mode .section-eyebrow,
+body.dark-mode .section-eyebrow::before {
+    color: #8ab4ff;
+    background-color: currentColor;
+}
+
+body.dark-mode .section-eyebrow {
+    background: transparent;
+}
+
+body.dark-mode main a:not(.btn):not(.text-white):not(.dropdown-item) {
+    color: #8ab4ff;
+}
+
+body.dark-mode main a:not(.btn):not(.text-white):not(.dropdown-item):hover {
+    color: #c4d9ff;
+}
+
+body.dark-mode .page-banner p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+body.dark-mode .text-gradient {
+    background-image: linear-gradient(135deg, #8ab4ff 0%, #c4b5fd 100%);
+}
+
+body.dark-mode .alert-primary {
+    color: #dbeafe;
+    background-color: rgba(59, 130, 246, 0.14);
+    border-color: rgba(96, 165, 250, 0.32);
+}
+
+body.dark-mode .alert-primary a {
+    color: #bfdbfe;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+body.dark-mode .table,
+body.dark-mode .table th,
+body.dark-mode .table td {
+    --bs-table-color: var(--text-secondary);
+}
+
+body.dark-mode .table thead th {
+    color: var(--text-primary);
+}
+
+body.dark-mode .table tbody td {
+    color: var(--text-secondary);
+}
+
+body.dark-mode ::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
