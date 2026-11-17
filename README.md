@@ -49,7 +49,7 @@ Generative AI tools were used for research assistance, editing, structuring and 
 The four case studies use a concise structure: overview, contribution, technologies or methods, challenge, and evidence. Longer source excerpts and provenance notes are retained under `evidence/`.
 
 ## Assessment alignment update (V14)
-- CV target: EY Business Consulting Summer Internship — London, July 2027.
+- Assessment advert used to tailor the CV: EY Business Consulting Summer Internship — London, July 2027. This is the selected advert for the assignment, not a statement of long-term career preference.
 - The role description highlights analytical thinking, problem-solving, collaboration, critical judgement, adaptability and digital fluency; the CV maps these to evidenced study, projects, placements and leadership.
 - The public programme summary reviewed does not state a specific year-of-study requirement. Applicants must verify the full eligibility conditions in EY's live application process.
 - The About page reflection now includes user needs, responsible technology, privacy, reliability, accessibility, legal/permission awareness and future development goals.

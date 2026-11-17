@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typingElement) {
         const phrases = [
             'Computer Science (Data Science & AI) Student',
-            'Interested in Business & Technology Consulting',
+            'Interested in AI, Data Science & Software Development',
             'Exploring AI, Data & Digital Solutions',
             'Building Practical, User-Focused Technology'
         ];

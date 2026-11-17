@@ -27,7 +27,7 @@ This index points to the artefacts used by the portfolio case studies. Each case
 - Status: concept stage. No completed prototype or validated user outcomes are claimed.
 
 ## Assessment alignment (V14)
-- CV tailored to EY Business Consulting Summer Internship — July 2027 (London).
+- CV tailored to the selected assessment advert: EY Business Consulting Summer Internship — July 2027 (London). The advert is an assessment choice, not a claim about long-term career preference.
 - Offline advert snapshot included under `appendices/`.
 - The About page reflection addresses user needs, privacy, reliability, transparency, accessibility, permissions and future development.
 - The Skills page and CV describe the Duke of Edinburgh activity as a Gold-level practice expedition, not as confirmation that the full Gold Award has been achieved.
