@@ -2262,3 +2262,33 @@ body.dark-mode ::placeholder {
     opacity: 1;
 }
 
+/* ===== LIGHT THEME — NAVBAR OVER DARK HERO / PAGE BANNER =====
+   The transparent header sits over a permanently dark hero/banner,
+   even while the rest of the site is in light mode. Keep it bright
+   until the navbar gains its light glass surface after scrolling. */
+@media (min-width: 992px) {
+    body:not(.dark-mode) .navbar:not(.scrolled) .navbar-brand {
+        color: #f8fafc !important;
+        text-shadow: 0 1px 12px rgba(0, 0, 0, 0.28);
+    }
+
+    body:not(.dark-mode) .navbar:not(.scrolled) .navbar-brand .text-primary {
+        color: #a5c7ff !important;
+    }
+
+    body:not(.dark-mode) .navbar:not(.scrolled) .nav-link {
+        color: rgba(241, 245, 249, 0.84) !important;
+        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    body:not(.dark-mode) .navbar:not(.scrolled) .nav-link:hover,
+    body:not(.dark-mode) .navbar:not(.scrolled) .nav-link.active {
+        color: #ffffff !important;
+        background: rgba(96, 165, 250, 0.20);
+    }
+
+    body:not(.dark-mode) .navbar:not(.scrolled) .nav-link.active::after {
+        background: #a5c7ff;
+    }
+}
+
