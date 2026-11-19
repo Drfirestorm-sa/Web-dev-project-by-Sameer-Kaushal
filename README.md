@@ -1,4 +1,4 @@
-# Sameer Kaushal — Portfolio (V14)
+# Sameer Kaushal — Portfolio (V15)
 
 A multi-page personal portfolio for the University of Dundee CS21001 Employability for Computing Professionals assessment.
 
@@ -7,7 +7,7 @@ A multi-page personal portfolio for the University of Dundee CS21001 Employabili
 - `about.html` — profile, education and reflection
 - `work-experience.html` — professional placements, volunteering and leadership experience
 - `projects.html` — technical projects and product exploration only
-- `skills.html` — technical, business and transferable skills
+- `skills.html` — technical, data and transferable skills
 - `cv.html` — CV overview and downloadable two-page PDF
 - `wordle-ai-case-study.html` — algorithm implementation, source excerpts, tests and reported evaluation results
 - `local-ai-case-study.html` — architecture illustration, configuration notes and status boundaries
@@ -22,7 +22,7 @@ Extract the ZIP and open `index.html` in a modern browser. Internet access is ne
 Work placements and volunteering are kept on the dedicated Work Experience page. The Projects page is reserved for work built or developed: Wordle AI Solver, Local AI Assistant, the portfolio website and Fravara.
 
 ## Original visual behaviour retained
-The current V14 release builds on the original website's HTML structure and shared stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
+The current V15 release builds on the original website's HTML structure and shared stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
 
 ## Project status
 - Wordle AI Solver: completed academic project; source code exists in a private repository.
@@ -39,18 +39,23 @@ Generative AI tools were used for research assistance, editing, structuring and 
 - `evidence/website/` identifies the included source files used as evidence for the website case study.
 - `images/evidence/` contains explanatory SVGs used by the portfolio.
 
+## Selected assessment advert
+- Amazon — **2027 Software Dev Engineer Intern, United Kingdom** (Job ID 10554586).
+- Selected because the role centres on software engineering, programming, algorithms and systems development, aligning with my interests in software development and AI.
+- Official employer listing: https://amazon.jobs/en/jobs/10554586/2027-software-dev-engineer-intern-united-kingdom
+
 ## Supporting files
-- `assets/Sameer_Kaushal_EY_Business_Consulting_CV.pdf` — two-page CV
-- `appendices/EY_Business_Consulting_Summer_Internship_July_2027_Advert.pdf` — accessible offline snapshot of the role description and programme details displayed on EY's official UK Early Careers page on 16 November 2026.
+- `assets/Sameer_Kaushal_Amazon_SDE_Intern_2027_CV.pdf` — updated two-page CV, tailored to the selected Amazon internship.
+- The offline advert record is supplied separately as an assessment attachment. It is a structured summary of the employer's listing checked on 19 November 2026, not a verbatim webpage printout.
 
 
 ## Project case studies
 
 The four case studies use a concise structure: overview, contribution, technologies or methods, challenge, and evidence. Longer source excerpts and provenance notes are retained under `evidence/`.
 
-## Assessment alignment update (V14)
-- Assessment advert used to tailor the CV: EY Business Consulting Summer Internship — London, July 2027. This is the selected advert for the assignment, not a statement of long-term career preference.
-- The role description highlights analytical thinking, problem-solving, collaboration, critical judgement, adaptability and digital fluency; the CV maps these to evidenced study, projects, placements and leadership.
-- The public programme summary reviewed does not state a specific year-of-study requirement. Applicants must verify the full eligibility conditions in EY's live application process.
-- The About page reflection now includes user needs, responsible technology, privacy, reliability, accessibility, legal/permission awareness and future development goals.
-- The complete accessible advert snapshot is stored at `appendices/EY_Business_Consulting_Summer_Internship_July_2027_Advert.pdf`.
+## Assessment alignment update (V15)
+- Assessment advert used to tailor the CV: Amazon 2027 Software Dev Engineer Intern — United Kingdom (Job ID 10554586).
+- The role requirements include programming, algorithms, data structures, operating systems and analytical problem-solving; the CV maps these to current study, the Wordle AI Solver, local AI setup work and the portfolio website.
+- The role requires applicants to remain enrolled and have at least one academic term remaining after the internship. Check current availability and full conditions on the official employer listing before applying.
+- The About page reflection addresses user needs, responsible technology, privacy, reliability, accessibility, permissions and future development goals.
+- The Skills and CV pages describe the Duke of Edinburgh activity as a Gold-level practice expedition, not as confirmation that the full Gold Award has been achieved.

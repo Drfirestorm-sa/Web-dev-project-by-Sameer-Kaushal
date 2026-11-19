@@ -1,4 +1,4 @@
-# Project evidence index (V14)
+# Project evidence index (V15)
 
 This index points to the artefacts used by the portfolio case studies. Each case study explains the project, my contribution, technologies or methods, a genuine challenge, and the evidence available. Supporting source files are retained for visitors who want more detail.
 
@@ -26,8 +26,8 @@ This index points to the artefacts used by the portfolio case studies. Each case
 - Original concept artwork: `images/fravara pickaball 3.png`
 - Status: concept stage. No completed prototype or validated user outcomes are claimed.
 
-## Assessment alignment (V14)
-- CV tailored to the selected assessment advert: EY Business Consulting Summer Internship — July 2027 (London). The advert is an assessment choice, not a claim about long-term career preference.
-- Offline advert snapshot included under `appendices/`.
+## Assessment alignment (V15)
+- CV tailored to the selected assessment advert: Amazon 2027 Software Dev Engineer Intern — United Kingdom (Job ID 10554586). The role aligns with my interests in software development and AI.
+- Offline advert record supplied separately with the assessment submission; see the official employer listing link in the portfolio's CV page.
 - The About page reflection addresses user needs, privacy, reliability, transparency, accessibility, permissions and future development.
 - The Skills page and CV describe the Duke of Edinburgh activity as a Gold-level practice expedition, not as confirmation that the full Gold Award has been achieved.
