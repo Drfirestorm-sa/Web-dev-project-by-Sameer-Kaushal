@@ -2,6 +2,11 @@
 
 A multi-page personal portfolio for the University of Dundee CS21001 Employability for Computing Professionals assessment.
 
+## Live Portfolio
+**Visit the published portfolio:** https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/
+
+This is the live GitHub Pages website. The source code for the site is maintained in this repository.
+
 ## Pages
 - `index.html` — homepage and featured projects
 - `about.html` — profile, education and reflection
