@@ -30,4 +30,4 @@ This index points to the artefacts used by the portfolio case studies. Each case
 - CV tailored to the selected assessment advert: Amazon 2027 Software Dev Engineer Intern — United Kingdom (Job ID 10554586). The role aligns with my interests in software development and AI.
 - Offline advert record supplied separately with the assessment submission; see the official employer listing link in the portfolio's CV page.
 - The About page reflection addresses user needs, privacy, reliability, transparency, accessibility, permissions and future development.
-- The Skills page and CV describe the Duke of Edinburgh activity as a Gold-level practice expedition, not as confirmation that the full Gold Award has been achieved.
+- The Duke of Edinburgh Gold Award has been achieved. The CV and portfolio also record the five-day, four-night Gold-level practice expedition in the Black Mountains, Wales.

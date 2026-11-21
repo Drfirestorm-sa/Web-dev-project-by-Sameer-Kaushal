@@ -58,4 +58,4 @@ The four case studies use a concise structure: overview, contribution, technolog
 - The role requirements include programming, algorithms, data structures, operating systems and analytical problem-solving; the CV maps these to current study, the Wordle AI Solver, local AI setup work and the portfolio website.
 - The role requires applicants to remain enrolled and have at least one academic term remaining after the internship. Check current availability and full conditions on the official employer listing before applying.
 - The About page reflection addresses user needs, responsible technology, privacy, reliability, accessibility, permissions and future development goals.
-- The Skills and CV pages describe the Duke of Edinburgh activity as a Gold-level practice expedition, not as confirmation that the full Gold Award has been achieved.
+- The Skills, CV and Work Experience pages record the Duke of Edinburgh Gold Award as achieved and retain the five-day, four-night Gold-level practice expedition in the Black Mountains, Wales as supporting detail.
