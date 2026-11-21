@@ -1,4 +1,4 @@
-# Sameer Kaushal — Portfolio (V15)
+# Sameer Kaushal — Portfolio (V16)
 
 A multi-page personal portfolio for the University of Dundee CS21001 Employability for Computing Professionals assessment.
 
@@ -6,6 +6,9 @@ A multi-page personal portfolio for the University of Dundee CS21001 Employabili
 **Visit the published portfolio:** https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/
 
 This is the live GitHub Pages website. The source code for the site is maintained in this repository.
+
+## Current interests
+My interests include software development, AI, data science, AI security and ethical hacking. AI security and ethical hacking are areas I am exploring, not claims of professional cybersecurity experience.
 
 ## Pages
 - `index.html` — homepage and featured projects
@@ -27,7 +30,7 @@ Extract the ZIP and open `index.html` in a modern browser. Internet access is ne
 Work placements and volunteering are kept on the dedicated Work Experience page. The Projects page is reserved for work built or developed: Wordle AI Solver, Local AI Assistant, the portfolio website and Fravara.
 
 ## Original visual behaviour retained
-The current V15 release builds on the original website's HTML structure and shared stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
+The current V16 release builds on the original website's HTML structure and shared stylesheet/script. It retains the page loader, custom cursor, scroll-progress indicator, dark-mode toggle, smooth navigation, scroll-triggered fade/scale reveals, staggered cards, animated counters, hero typing effect, parallax hero elements, back-to-top control and responsive Bootstrap navigation. Reduced-motion accessibility styles from the original site are retained.
 
 ## Project status
 - Wordle AI Solver: completed academic project; source code exists in a private repository.
@@ -58,9 +61,10 @@ Generative AI tools were used for research assistance, editing, structuring and 
 
 The four case studies use a concise structure: overview, contribution, technologies or methods, challenge, and evidence. Longer source excerpts and provenance notes are retained under `evidence/`.
 
-## Assessment alignment update (V15)
+## Assessment alignment update (V16)
 - Assessment advert used to tailor the CV: Amazon 2027 Software Dev Engineer Intern — United Kingdom (Job ID 10554586).
 - The role requirements include programming, algorithms, data structures, operating systems and analytical problem-solving; the CV maps these to current study, the Wordle AI Solver, local AI setup work and the portfolio website.
 - The role requires applicants to remain enrolled and have at least one academic term remaining after the internship. Check current availability and full conditions on the official employer listing before applying.
 - The About page reflection addresses user needs, responsible technology, privacy, reliability, accessibility, permissions and future development goals.
+- AI security and ethical hacking are presented as developing interests, not as professional experience.
 - The Skills, CV and Work Experience pages record the Duke of Edinburgh Gold Award as achieved and retain the five-day, four-night Gold-level practice expedition in the Black Mountains, Wales as supporting detail.

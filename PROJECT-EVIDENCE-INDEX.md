@@ -1,4 +1,4 @@
-# Project evidence index (V15)
+# Project evidence index (V16)
 
 This index points to the artefacts used by the portfolio case studies. Each case study explains the project, my contribution, technologies or methods, a genuine challenge, and the evidence available. Supporting source files are retained for visitors who want more detail.
 
@@ -26,8 +26,9 @@ This index points to the artefacts used by the portfolio case studies. Each case
 - Original concept artwork: `images/fravara pickaball 3.png`
 - Status: concept stage. No completed prototype or validated user outcomes are claimed.
 
-## Assessment alignment (V15)
+## Assessment alignment (V16)
 - CV tailored to the selected assessment advert: Amazon 2027 Software Dev Engineer Intern — United Kingdom (Job ID 10554586). The role aligns with my interests in software development and AI.
 - Offline advert record supplied separately with the assessment submission; see the official employer listing link in the portfolio's CV page.
 - The About page reflection addresses user needs, privacy, reliability, transparency, accessibility, permissions and future development.
 - The Duke of Edinburgh Gold Award has been achieved. The CV and portfolio also record the five-day, four-night Gold-level practice expedition in the Black Mountains, Wales.
+- AI security and ethical hacking are shown as interests being explored, not as professional experience.
