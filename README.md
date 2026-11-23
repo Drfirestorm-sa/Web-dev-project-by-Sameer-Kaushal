@@ -52,9 +52,16 @@ Generative AI tools were used for research assistance, editing, structuring and 
 - Selected because the role centres on software engineering, programming, algorithms and systems development, aligning with my interests in software development and AI.
 - Official employer listing: https://amazon.jobs/en/jobs/10554586/2027-software-dev-engineer-intern-united-kingdom
 
-## Supporting files
-- `assets/Sameer_Kaushal_Amazon_SDE_Intern_2027_CV.pdf` — updated two-page CV, tailored to the selected Amazon internship.
-- The offline advert record is supplied separately as an assessment attachment. It is a structured summary of the employer's listing checked on 19 November 2026, not a verbatim webpage printout.
+## Submission files
+- **Live portfolio:** https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/
+- **CV webpage:** https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/cv.html
+- **Downloadable CV:** [Sameer_Kaushal_Amazon_SDE_Intern_2027_CV.pdf](assets/Sameer_Kaushal_Amazon_SDE_Intern_2027_CV.pdf) — current two-page PDF, tailored to the selected Amazon 2027 Software Development Engineer Intern role. The portfolio CV page links to this same repository asset.
+- **Offline job advert attachment:** `2027 Software Dev Engineer Intern - United Kingdom - Job ID_ 10554586 _ Amazon.jobs.pdf` — three-page A3 PDF printout of the Amazon.jobs advert, saved on 20 November 2026. It includes the role description, key responsibilities, internship information, Basic Qualifications and Preferred Qualifications.
+- The offline advert PDF is supplied separately as an assessment attachment; it is not stored in this public source repository. The official employer listing is linked above.
+
+## Professional profiles
+- [GitHub](https://github.com/Drfirestorm-sa)
+- [LinkedIn](https://www.linkedin.com/in/sameer-kaushal-041709279/)
 
 
 ## Project case studies
