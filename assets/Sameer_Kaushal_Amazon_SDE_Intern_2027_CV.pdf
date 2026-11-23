@@ -1,140 +1,141 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 4 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Length 5366 >>
-stream
-0.075 0.15 0.27 rg 0 758 595.276 84 re f
-1 1 1 rg BT /F2 21 Tf 1 0 0 1 43 814 Tm (SAMEER KAUSHAL) Tj ET
-0.88 0.92 0.97 rg BT /F1 9.2 Tf 1 0 0 1 44 795 Tm (Computer Science \(Data Science & AI\) Undergraduate | Software Engineering & AI) Tj ET
-0.96 0.97 1 rg BT /F1 7.7 Tf 1 0 0 1 44 777 Tm (United Kingdom | 07404 879413 | kaushalsameer731@gmail.com | GitHub | LinkedIn) Tj ET
-0.12 0.34 0.60 rg BT /F2 8.1 Tf 1 0 0 1 43 741 Tm (TARGET ROLE: 2027 SOFTWARE DEVELOPMENT ENGINEER INTERN - AMAZON UK | JOB ID 10554586) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 718 Tm (PROFILE) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 713 m 552 713 l S
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 701 Tm (Second-year BSc \(Hons\) Computer Science \(Data Science & AI\) student at the University of Dundee, with an) Tj ET
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 690.5 Tm (industrial-placement pathway and a strong interest in software engineering, AI and data-driven systems. I build and) Tj ET
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 680 Tm (evaluate Python projects, develop web-based interfaces and am exploring local AI infrastructure, alongside developing) Tj ET
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 669.5 Tm (interests in AI security and ethical hacking. I bring structured problem-solving, attention to detail and clear) Tj ET
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 659 Tm (communication through technical work experience, volunteering and student leadership.) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 639 Tm (EDUCATION) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 634 m 552 634 l S
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 621 Tm (University of Dundee | BSc \(Hons\) Computer Science \(Data Science & AI\) with Industrial Placement | 2025-Present) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 43 608 Tm (Relevant study includes programming, algorithms and data structures, and operating systems.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 589 Tm (RR6 Sixth Form College | Pearson BTEC National Extended Certificates | 2023-2025) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 43 576 Tm (Information Technology, Business Studies and Applied Science - DDD.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 557 Tm (Rutlish School, London | 10 GCSEs | 2018-2023) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 531 Tm (TECHNICAL SKILLS) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 526 m 552 526 l S
-0.10 0.29 0.50 rg BT /F2 7.8 Tf 1 0 0 1 43 513 Tm (Programming) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 132 513 Tm (Python \(intermediate\); C++ \(currently studying\); Java \(first-year study\); JavaScript \(beginner\).) Tj ET
-0.10 0.29 0.50 rg BT /F2 7.8 Tf 1 0 0 1 43 500 Tm (Web & data) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 132 500 Tm (HTML & CSS \(intermediate\); SQL \(beginner\); NumPy; pytest.) Tj ET
-0.10 0.29 0.50 rg BT /F2 7.8 Tf 1 0 0 1 43 487 Tm (Tools & methods) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 132 487 Tm (Git & GitHub; LM Studio; OpenClaw; Tailscale; Salesforce; Jira; Microsoft Office.) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 460 Tm (SELECTED TECHNICAL PROJECTS) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 455 m 552 455 l S
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 442 Tm (Wordle AI Solver | Python, NumPy, pytest | Completed academic project) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 428 Tm (Implemented a Wordle environment, guess history and duplicate-letter-aware feedback, including a vectorised matrix) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 418.3 Tm (for 243 possible feedback patterns.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 407.6 Tm (Developed entropy, expected-candidate and minimax search agents, plus baseline agents, tests and an evaluation) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 397.90000000000003 Tm (script to compare strategies.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 383.20000000000005 Tm (Local AI Assistant | LM Studio, Qwen3.5-4B, OpenClaw, Hermes, Tailscale | In development) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 369.20000000000005 Tm (Configured local model serving on an ASUS V16 laptop and an OpenClaw gateway on a separate Windows PC, connecting) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 359.50000000000006 Tm (the devices over Tailscale.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 348.80000000000007 Tm (Investigated context-window compatibility, local inference performance and possible voice-input components; a) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 339.1000000000001 Tm (complete voice pipeline is not yet evidenced.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 324.4000000000001 Tm (Personal Portfolio Website | HTML, CSS, JavaScript, Bootstrap | Ongoing) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 310.4000000000001 Tm (Built a multi-page responsive portfolio with shared styling, navigation, dark mode, scroll progress and animated) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 300.7000000000001 Tm (interface elements.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.7 Tf 1 0 0 1 51 290.0000000000001 Tm (Documented project evidence and refined page structure, accessibility and consistency across the site.) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 34 m 552 34 l S
-0.40 0.44 0.50 rg BT /F1 7 Tf 1 0 0 1 43 20 Tm (Sameer Kaushal | Amazon SDE Intern 2027) Tj ET
-0.40 0.44 0.50 rg BT /F1 7 Tf 1 0 0 1 545 20 Tm (1) Tj ET
-endstream
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Drfirestorm-sa)
+>> /Border [ 0 0 0 ] /Rect [ 280.653 751.4394 305.549 761.0394 ] /Subtype /Link /Type /Annot
+>>
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/sameer-kaushal-041709279/)
+>> /Border [ 0 0 0 ] /Rect [ 312.077 751.4394 342.317 761.0394 ] /Subtype /Link /Type /Annot
+>>
 endobj
 6 0 obj
-<< /Length 4735 >>
-stream
-0.075 0.15 0.27 rg 0 758 595.276 84 re f
-1 1 1 rg BT /F2 21 Tf 1 0 0 1 43 814 Tm (SAMEER KAUSHAL) Tj ET
-0.88 0.92 0.97 rg BT /F1 9.2 Tf 1 0 0 1 44 795 Tm (Computer Science \(Data Science & AI\) Undergraduate | Software Engineering & AI) Tj ET
-0.96 0.97 1 rg BT /F1 7.7 Tf 1 0 0 1 44 777 Tm (United Kingdom | 07404 879413 | kaushalsameer731@gmail.com | GitHub | LinkedIn) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 741 Tm (PROFESSIONAL EXPERIENCE) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 736 m 552 736 l S
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 722 Tm (Precisely | Technical Support Work Experience | August 2024) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 708 Tm (Worked alongside support engineers to understand technical workflows and enterprise support processes.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 697 Tm (Used Salesforce and Jira to manage support tickets, building familiarity with troubleshooting, issue tracking and) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 687 Tm (client resolution.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 672 Tm (Oriana Power | Renewable Energy Work Experience | August 2024) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 658 Tm (Assisted with solar-panel surveys and performance-data collection, observing energy infrastructure and safety) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 648 Tm (procedures.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 647 Tm (Supported coordination between team members and project activities in a practical work setting.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 622 Tm (Scope Charity Shop | Volunteer) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 608 Tm (Supported customer service and day-to-day retail operations; helped sort and label donated items to keep processes) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 598 Tm (organised.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 597 Tm (Developed teamwork, communication and responsibility in a customer-facing environment.) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 563 Tm (LEADERSHIP & COLLABORATION) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 558 m 552 558 l S
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 544 Tm (Deputy Lead Ambassador / Head Boy Team | RR6) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 530 Tm (Coordinated student initiatives and worked with a team of 20 student leaders.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 519 Tm (Helped organise a Year 13 graduation event attended by more than 200 students, supporting planning and delivery.) Tj ET
-0.15 0.19 0.25 rg BT /F2 8.1 Tf 1 0 0 1 43 494 Tm (House Captain | Rutlish School) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 480 Tm (Elected for three consecutive years, supporting school activities and developing communication, organisation and) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.8 Tf 1 0 0 1 51 470 Tm (peer leadership.) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 443 Tm (ADDITIONAL ACHIEVEMENTS & DEVELOPMENT) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 438 m 552 438 l S
-0.15 0.19 0.25 rg BT /F1 7.9 Tf 1 0 0 1 51 424 Tm (Duke of Edinburgh Gold Award \(achieved\).) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.9 Tf 1 0 0 1 51 412 Tm (Completed the Gold-level practice expedition: five days and four nights in the Black Mountains, Wales.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.9 Tf 1 0 0 1 51 400 Tm (Ignite Academic Excellence Award; Curriculum Awards in ICT and Geography; UKMT Junior Mathematical Challenge -) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.9 Tf 1 0 0 1 51 390 Tm (Bronze.) Tj ET
-0.15 0.19 0.25 rg BT /F1 7.9 Tf 1 0 0 1 51 388 Tm (Currently developing C++, SQL, data structures, algorithms, testing and technical documentation.) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 355 Tm (TRANSFERABLE SKILLS) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 350 m 552 350 l S
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 336 Tm (Analytical problem-solving | Logical reasoning | Troubleshooting | Teamwork | Communication | Leadership | Organisation) Tj ET
-0.15 0.19 0.25 rg BT /F1 8 Tf 1 0 0 1 43 325.5 Tm (| Adaptability | Attention to detail) Tj ET
-0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43 297 Tm (PORTFOLIO & LINKS) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 292 m 552 292 l S
-0.12 0.34 0.60 rg BT /F1 7.9 Tf 1 0 0 1 43 278 Tm (Live portfolio: drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/) Tj ET
-0.12 0.34 0.60 rg BT /F1 7.9 Tf 1 0 0 1 43 264 Tm (GitHub: github.com/Drfirestorm-sa) Tj ET
-0.12 0.34 0.60 rg BT /F1 7.9 Tf 1 0 0 1 43 250 Tm (LinkedIn: linkedin.com/in/sameer-kaushal-041709279/) Tj ET
-0.78 0.83 0.89 RG 0.6 w 43 34 m 552 34 l S
-0.40 0.44 0.50 rg BT /F1 7 Tf 1 0 0 1 43 20 Tm (Sameer Kaushal | Amazon SDE Intern 2027) Tj ET
-0.40 0.44 0.50 rg BT /F1 7 Tf 1 0 0 1 545 20 Tm (2) Tj ET
-endstream
+<<
+/Annots [ 4 0 R 5 0 R ] /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
 endobj
 7 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Drfirestorm-sa)
+>> /Border [ 0 0 0 ] /Rect [ 280.653 751.4394 305.549 761.0394 ] /Subtype /Link /Type /Annot
+>>
 endobj
 8 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/sameer-kaushal-041709279/)
+>> /Border [ 0 0 0 ] /Rect [ 312.077 751.4394 342.317 761.0394 ] /Subtype /Link /Type /Annot
+>>
 endobj
 9 0 obj
-<< /Title (Sameer Kaushal - Amazon 2027 Software Development Engineer Intern CV) /Author (Sameer Kaushal) /Subject (Two page CV) >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://drfirestorm-sa.github.io/Web-dev-project-by-Sameer-Kaushal/)
+>> /Border [ 0 0 0 ] /Rect [ 89.13178 348.9594 291.0408 357.8394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Drfirestorm-sa)
+>> /Border [ 0 0 0 ] /Rect [ 326.2648 348.9594 411.3796 357.8394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/Annots [ 7 0 R 8 0 R 9 0 R 10 0 R ] /Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/PageMode /UseNone /Pages 14 0 R /Type /Catalog
+>>
+endobj
+13 0 obj
+<<
+/Author (Sameer Kaushal) /CreationDate (D:20261121162313+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261121162313+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Sameer Kaushal - CV - Amazon Software Development Engineer Intern 2027) /Trapped /False
+>>
+endobj
+14 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 11 0 R ] /Type /Pages
+>>
+endobj
+15 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2875
+>>
+stream
+Gau0E?$G!n&q0MXW2Ddh"uPNOM=o&$+>FB*Ld`ZRm.#ub2:*"bXjk4":O`5uD@(kM@'^0-3Ko!CFB..sHb6:JV_7u!eXo-$F>9OThWpsV1n0\HBbnsj1nL9:k=fqK;`>`F>Xs5eXfjfLbG"eDB:;OjB*h_DVRpa'-*sfJ>e=cK9Xa%r?+8G?5)[KDX0"A0LtgS/9Y9K]9YpnVZ<c(d-st''HL56Q_!#K\UT^.DMlGh60k34loZL_.7mu6j#-n3c1a-coVF_t6Srh>WS9HgeMe9^q;`gK&QDs+sX7pX5I:r't7)*#5]APXSbj8P!9nLi:%F^'t\toKEdL=$uD#HHq]4B"-s*/It*uV\!aO"/Ji-IN"ViQJVhW8/A_X`014_r+3$Nn!&8e\cg2jT3pRS%/OQtc6*#&-64MiI92[>&CcQ,&3gJ?pM/o["NP_Jd0fK*INpGP!m%=h_uUYk/)$`a1\B:O^T&S1Jo:"RorqefNeaXWMRjiM1TIkB1g1lhehV>,)]OYr7%0#]I;7L!k"4^4lK5UT[ZL'WNo.;ubGnp3EG;BoJD$_8CMFi8V%iX;:34r:V11SpY,.,WPo6CKj:*(RXXL>k]LKrCs:4aeXQ6bm*na`\Y3@SW<`Lr)*s)IaV-l+Rf%&m*"=99V_-Mj6>sep%W,gj-pRC)d/brS([T9L,q0$*rPp/V?6b^p4=V9Us-8UX*6tIVYs!"qMu1\LBc;Yd_#)A>\P%rFa&?4IPMociL+Rsk16a=:"/@l2;LpT(,9p1Vn%5#f2_*Z@/jQZesu],1l]Y+\?=R\nS<Hq>ZG&65V_?W:)?K%.J6f)-=LQ3r1#CP!6i,MP6,8XP1,+56^A#K"c4N-`VGDQ"W(rHkHs4"',O=4'B2Sc(*_pjeB&n!?nm,@!O\3g@eo)gYq@:DqrT?WJ4o-<KtmpC2KHXBEm]UXl5(Ukl\%:"A)Y!1/1rcJcst1m:b?'*5>o(6[h_UBH^:RZYs9"?$JC;*C">97`#_"$I_inDqAbM2Puf]Fk:B5j:.8lIP60<\1=(BY>6^hGR51cX1ljt;lS2jgVb!SJEnV<2Tl[^e;V2d^(1eYFOGCgfBMD_Y4RgnDg.cB2Q?cXdQ6]S:Pcl<X9(T772ddhne#$+`Q#OI#<4VTI:G;b\/s\WKhC`HjkYA\e4HILWcbmS8EdMkdBlfWXVe;1?5K"ffeg_l3)d.9Z9S,b>&YR^hb(mM*#cAAB-4O&?mKHZ%T-t7Y]5n4gm*P#4K[H5+>D*MY`*R70h,d*^?W1^g\n;U'L'j-0[K\76#SgF^g;f<ta&Uqc$a<,Pj.[^aQ7&?"I#&E];=Tf8233fSV5nD1;eGY#^.05o7NUEaH&T[1&R3>(hLV='fQ]+i&*ZP<',_]QK?k^>3Fo\YF%KM8]U^X\,?+;ZGW6EqlZB+p,]a)gWQInL8/e=_Fdk#+!kMPLj<95i(;3#"73%G,C:$@'dHHCNfFC*91aSuSGd2oHb;>441r["Z!5?Q]n&*Kk^Q#_j9"`CnI(+Ga^Akk6TiNda-H!Za]T89@e2tYPI5g16QTt?N@IR.nKC*IWm4\I)];c.u[T3pd\>n_Dm>h%#@sJ"-=]aup!MO,>mP\f;nMQ'Cr5%YU^9?D*Xe6ZPZ/;[SrDBVFj%S8d4LA'`&@7INiXbM'C&%SoGT)fl%b6QiQ2JHWq<lC4q04p_Gp01'9>0/onq*BE!Xg%e)Oc?@&+<gJ(?mH!3QS)Od2g#/l2&,u7iXEbIc#nL8@/.)AhRfK;qN+:hB!fQ:X^+VSC:1MhlY3R>=2*'CWMkjJn5-p.H"UXOR022U:a5($jK1gXiAA%RU0&&S=\2H`fack5Fp734^rtKNr^^-=[9h+I(nUNInnTXaA^b6e*S-Q&).??(&n*reLMK;\q?sg0;ZV7CqHlPhkccX7AbO_IIXhZ]5hQ/^9&O-[5E36ZN/l@>O(oT2q7TeAYV_8oB&]Pq56TkB=[0-mesMuHfO@83#dol/+FGlYOLlaOggk[D?k?*Ogd"rT!U$EP3-2kjNupqP!L2eXe)ED'j'-I=5PuoAK)UDJYp9p0TF"5fM#dF?tOP*'6oJ;pIWsoA&#0jA-L4EC-Cd@6PJ^NCp^$S<(G,p'uqjT+1Gr]b5Q(r$^'T%W#CucO(?#W5tFhZNj!'E3Fh$C++.qWSZnR#BS@;N!6a%.rE%::#rF!H1+>kSJn%@,+L(BOZO^VfB$?HK\m\7@IiV"RAdehcH(#o@EpsKf=XO1l4Hr4A6j>"qO8W]@E:=$urtkG2HMf<D$^1+(KP%Q9.a+]\ZBNP70)O+l3[6@+@iEXCm.UKgI"9$:g=9\pl'bfEP`1uID?0r4?QnM.o51PcD>NnC&lZ+uej[3unhsdrK+C7,Rf3M"-I)0)+#Vc?Nk5teM$m^Y-?HmtpDVR&8=YDc6C)\<[mA(Q1-"beHh=5mUWCbLRV`\LJUeNWRCqmKX79+6<`[H]NgB[DTY"VOkscU'W&[[\/0TJ4CW6&$:SeCU0HO'l8E?t,As05l``r]aaoDQk(7cff<)pYa5OsU<E2J5I-ZbTSYmNk%)Tq,R$._QVBU'e0%SsB.W'/Qs'':1<"gs:i9.8h'74J3pP`f"mRL/J@LXK@N$rE8(F-V"PWn]<h36UWH1`,a?i[LQ1/\(Xa!O=LtbJpd"dhuX>9iE2AT"RFOgLQG\2@jW!12P56^XI[G.X7B[MipR3H&9^8n4j1!_j"+C@0L!]4\aGkHDamAP!Oe(8*X\3nQ3#6\3*DO5Q@`ceX#cm7T";b,#=ef8!$`UHTas%3juI0=?H3`&2JUI#`)=rPk?J/TBf55W;prs8"JY9KW)H\BqlUI_i's-eU=A!Y7UIT^<7;$:gtQ*k!5kep-5-*8qI~>endstream
+endobj
+16 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2467
+>>
+stream
+Gau0DgN):E&q0LUjO8j1a2kicbOite:q(0![Kl<oDFD5R;?7\/.^gUjA\oP(Vf]bbf5AL-$&<@pPcF:bSii9@#3kn;WkVt7F>9W`:Bh[`:$6'>RSD6C"k/ZbT4jg5)4!pakGfoXI)C)CQc>XnZnAIV19s'fn3#SQbL[`;X4rk:f60%-F.B/5KI/(k0!<pHg[:b<?,q";_LQ6B4jUK,0%=.$0ljmWl"Ifq)\u.H3h<L>F%KH7ba0k(H6hdPlq`bkA.[*A/%EgEe4oZ>:&gmNhpkahMfrr11ORr&^8SRuq)=srRba@h\c?@<2S>oWUO/lgL$=>/^b)@MVJCC8+7.V$</[Au11?6\DOLq/l(iMD"Co%.h+]MKULu[']XMD>m/:`&6hAeCL7oA`)u3YPb,o*<mHZ*5:05J&E^?UOOfh=OLaHQSZ]NZ1dfCuOp>b&/2uNZ+m]qYlKk+'&$4\.R`4T2.aXP:HEJ=J3fqOqIL\Y692=i?u(j^&36!e.!9=1A@5m`JE);ST7)Vqee/^O*,`:&iVCG+Z_1L/,ua!,)7U4jf1Q^*-*qr;a&>aD^Bd`X_e]uDJGmWgY5p@*e77&-(rR/UINR=UT=QtGRIH![=(\99sJq%QLL_jdhm,i(\'KCLYjg(3n]e?h+!aUf7;DpXiCa[0#[OWnW_c1>AG?7#VelPm%5_SC%(0/T`+[AQ#"2dZ.^O@gS63DVPhf9D'6/.Ng6PB+&DZCl,&hG`p9'o8o(r^OPIjeBs,V'>WfSoXb3ep[+R;7".C3)fd"FY*JY`;CB\-&YsGHXFa/6ld("V@fAJ2dEgIRn(C0OY-,`iflBHGa!kB'nTD"aLkn`7)]r;)R%F"Z-Gq#F/=dF#mY=6=@j+q4Qj9+@ViLP#uj^XA`pZl]upFu_@iHdKnL!dX1uT9.=`kjf]($D+qF'eOe:%&N0?d]d@@%Q&i1CA)d:;$OpWY\):hsu;..6Y`Hbd1%(#G0]qAC:'6'Wfa`ET/74b_H*9"Drqk!/fOYJQ<X]RrZ+)/qT^1I?F]nHr7Nlp7^WL66`C+mon]Kfl*TYSlIG#g0S$">>*pnfAc:a+s,El^>)3fHCf,Wo$L3?p9%\U74.j0^DsCbAjsa>,;==n<nOF,n=CN/fT:#c0+c-^*qV^(DI&%u$)f.T;FB`eu_;)02"=Pk&pnd^\k#'Rp*@0gL5EMjWZ-9+9iqUePUHH(d3G!(LY4r>,qY[lm\/!k4[`SV1IkWP>MJDR's,OR@='&QFM.4Xd4TRX]^_,6pVoI&[J%84pfYSO.j=)^Kl`14]Eo<e8@WdZPt.]U::8;6poo"'6^uaC.%\GZkFA4m/jnr?NO&/;(<!qhM!5>Iu&(<t>`7"&FTeTbsXTEs;]CBrMSsMLc*QZ=F-_nI39;Chf]P*p_$Q=D-DV/4Gjk-4bXhG'BUm<2\6Ra_nNW1MIg4]g4?D>Rk[LE;"3>UY`u7\2QiJo/>"-Y.gC]mp<tT]C,Q.epsMVhp@1c#]7hFjZ/6PUiX+H,8XgAg4lT4G!'sAJ8ZAsbHlXJBe!JI1/^VVS3aPJYm4SCg:AnD.e./ZhMJdXL>!FVTS!"\5VBE\a3'mp3r.NHL;j2P9G1NfV@c_*KA;(7X=-&cY)$[/8d.t`@`_U$\OD84Uo@Bo*j$'@ASp*4nH9>bRfbpN1H40SAXB+o^-5ae!&I'@Z:Nu&M'`f,;Xu`LC`b/K.11Veq;GIU"RrGP*86\>4=h5LBS2+'pMF6i]R+8A:9HEM9mA"5B5MmcKQ*cj',i&Ij44-;Yu(rlmjN:k_-f7)41/DpEZ"]q>R+W6'<'afc_Ht6ol6&N5_&_WC7ahV0C/Kn`,.c/q!LQJ<N7mlYL"_J2=o5hhfGV3!Mj=.b/KN-MZhJ<Ahp+LV^u)mLii:f_Z=2Pm3@Kt\k9K,DmAAgWLZF3Yq=ooERaJTXN:,dbn[!NM:@c\Mc*Fg0:#%,p8J3J'!s02/PoLl;8N-JW]rNEWp(U"/Va^i4f;VB`(Au#bt5uR[AuBb.QSZN?V22kAQ#Du8-Ne]T2oViErf9H/N4d9mco*j?]_#'phL)h.BBLT'UWW(FFG7A5TTDC56/9'*A>P8#)uD:]/%k8jd.clr&-U2WeK+a.#8d7('9cl1<"=No:eASSso=CKVb]SfO8WqjZcE2s806<3pqEeHj[m,Mbua'X5R_KH!>2<hq7<<hd(.OkMUa,YGmq,-p>gg:-YK`VQT0$f5_G\2,lMEaen2>.XJJWBa9'$eSm_#81^cZ,\O[/lETUFX+fiMW@kOIfRHq75?<JCIBMMGc0iu3/j3);E)V6N[Z8pSX&OXIbsT)T<K5-BO[(ehrTn^TZG#XYs#I>(jY+A3YZu<Hs6=If/Ip[K87M+)UY&'5_Wb9kV3.:gaGL$.Ij\m_!dRYgZriiJj0K6dWRGt*S_9l=ht;2^]DhDMDJ=<2DshcZ2mKUoKu<`ERC,84J56(OcT?>^~>endstream
 endobj
 xref
-0 10
+0 17
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000121 00000 n 
-0000000264 00000 n 
-0000005681 00000 n 
-0000005824 00000 n 
-0000010610 00000 n 
-0000010707 00000 n 
-0000010809 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000504 00000 n 
+0000000707 00000 n 
+0000000936 00000 n 
+0000001119 00000 n 
+0000001322 00000 n 
+0000001541 00000 n 
+0000001727 00000 n 
+0000001970 00000 n 
+0000002040 00000 n 
+0000002379 00000 n 
+0000002446 00000 n 
+0000005413 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+<<
+/ID 
+[<cffc15bcb1666ae7a9c53bce575d4d70><cffc15bcb1666ae7a9c53bce575d4d70>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 13 0 R
+/Root 12 0 R
+/Size 17
+>>
 startxref
-10956
+7972
 %%EOF
