@@ -60,10 +60,10 @@ q 0.075 0.15 0.27 rg 0 750 595.276 91.89 re f Q
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R /Annots [10 0 R 11 0 R 12 0 R] >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R /Annots [10 0 R 11 0 R 12 0 R 14 0 R] >>
 endobj
 6 0 obj
-<< /Length 5210 >>
+<< /Length 5930 >>
 stream
 q 0.075 0.15 0.27 rg 0 750 595.276 91.89 re f Q
 1 1 1 rg BT /F2 21.5 Tf 1 0 0 1 43.00 814.00 Tm (SAMEER KAUSHAL) Tj ET
@@ -110,6 +110,12 @@ q 0.075 0.15 0.27 rg 0 750 595.276 91.89 re f Q
 0.12 0.34 0.60 rg BT /F1 7.8 Tf 1 0 0 1 43.00 326.00 Tm (LinkedIn: linkedin.com/in/sameer-kaushal-041709279/) Tj ET
 0.78 0.83 0.89 RG 0.55 w 43.00 34.00 m 552.00 34.00 l S
 0.42 0.47 0.54 rg BT /F1 7 Tf 1 0 0 1 43.00 20.00 Tm (Sameer Kaushal | Amazon SDE Intern 2027) Tj ET
+0.10 0.29 0.50 rg BT /F2 9.4 Tf 1 0 0 1 43.00 307.00 Tm (ADDITIONAL PROGRAMMING PROJECTS) Tj ET
+0.78 0.83 0.89 RG 0.65 w 43.00 302.00 m 552.00 302.00 l S
+0.15 0.19 0.25 rg BT /F1 7.45 Tf 1 0 0 1 43.00 290.00 Tm (Separate public collection: 19 independent Python and Java programming projects.) Tj ET
+0.15 0.19 0.25 rg BT /F1 7.45 Tf 1 0 0 1 43.00 279.00 Tm (Examples include a threaded TCP chat app, Pandas/Matplotlib data analyser,) Tj ET
+0.15 0.19 0.25 rg BT /F1 7.45 Tf 1 0 0 1 43.00 268.00 Tm (Java contact manager with serialized storage, and recursive duplicate-file finder.) Tj ET
+0.12 0.34 0.60 rg BT /F1 7.45 Tf 1 0 0 1 43.00 257.00 Tm (GitHub: github.com/Drfirestorm-sa/Projects-made-by-sameer-kaushal-) Tj ET
 0.42 0.47 0.54 rg BT /F1 7 Tf 1 0 0 1 545.00 20.00 Tm (2) Tj ET
 endstream
 endobj
@@ -134,24 +140,28 @@ endobj
 13 0 obj
 << /Title (Sameer Kaushal - CV - Amazon 2027 Software Development Engineer Intern) /Author (Sameer Kaushal) /Subject (Two-page A4 CV with portfolio, GitHub and LinkedIn links) >>
 endobj
+14 0 obj
+<< /Type /Annot /Subtype /Link /A << /S /URI /URI (https://github.com/Drfirestorm-sa/Projects-made-by-sameer-kaushal-) >> /Border [0 0 0] /Rect [43 254.00 430 269.00] >>
+endobj
 xref
-0 14
+0 15
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000121 00000 n 
 0000000264 00000 n 
 0000005890 00000 n 
-0000006064 00000 n 
-0000011325 00000 n 
-0000011422 00000 n 
-0000011524 00000 n 
-0000011629 00000 n 
-0000011816 00000 n 
-0000011969 00000 n 
-0000012142 00000 n 
+0000006071 00000 n 
+0000012052 00000 n 
+0000012149 00000 n 
+0000012251 00000 n 
+0000012356 00000 n 
+0000012543 00000 n 
+0000012696 00000 n 
+0000012869 00000 n 
+0000013064 00000 n 
 trailer
-<< /Size 14 /Root 1 0 R /Info 13 0 R >>
+<< /Size 15 /Root 1 0 R /Info 13 0 R >>
 startxref
-12337
+13250
 %%EOF

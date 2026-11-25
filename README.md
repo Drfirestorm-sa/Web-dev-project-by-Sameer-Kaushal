@@ -64,6 +64,18 @@ Generative AI tools were used for research assistance, editing, structuring and 
 - [LinkedIn](https://www.linkedin.com/in/sameer-kaushal-041709279/)
 
 
+## Additional programming project collection
+
+In addition to the four detailed portfolio case studies, I maintain a separate public repository with **19 independent Python and Java projects**. The collection includes:
+- A threaded TCP chat application with multi-client handling and message broadcasting.
+- A JSON/CSV data analyser using Pandas and Matplotlib for summaries, filtering, sorting, plots and reports.
+- A Java contact manager with CRUD operations and object-serialization persistence.
+- A recursive duplicate-file finder that compares content hashes and estimates potential storage savings.
+
+These are smaller independent programming exercises and are kept distinct from the four main case studies and their assessment evidence.
+
+**Browse the source collection:** https://github.com/Drfirestorm-sa/Projects-made-by-sameer-kaushal-
+
 ## Project case studies
 
 The four case studies use a concise structure: overview, contribution, technologies or methods, challenge, and evidence. Longer source excerpts and provenance notes are retained under `evidence/`.
